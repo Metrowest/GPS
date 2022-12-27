@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Guide app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:description" content="Unidos por amor a Jehová, trabajando por la congregación.">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/GPS/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Boxicons CDN Link Nav var pequeno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
+          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest GPS</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>BIENVENIDOS A GPS DE METROWEST<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <div class="containera">
+      <img title="logo" src="public/assets/img/precursor4.webp" class="imgLogo2" />
+    </div>
+    <h3>Unidos por amor a Jehová, trabajando por la congregación.
+    </h3>
+
+    <div class="content1">
+      <p>
+        Metrowest GPS (Guia, Proteccion y Seguridad) no sustituye el sitio oficial de la Organización Cristiana de los
+        Testigos de Jehová,
+        jw.org ni la aplicación JW Library. Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar
+        los informes y publicar los anuncios, eventos, programas de las reuniones de la congregación.
+      </p>
+      <p>
+        Este sitio se ha preparado con la intención de facilitar a los nombrados de la congregación Metrowest Spanish
+        las siguientes herramientas:<br><br>
+
+        1. Lista de contactos, incluye: todos los hermanos de la congregación. <br><br>
+        2. Plan de emergencia ante un desastre natural, incluye: <br>
+        • Responsabilidades<br>
+        • Plan aprobado por el cuerpo<br>
+        • Vigilancia ante huracán<br>
+        • Aviso de huracán<br>
+        • Después del huracán<br>
+        • Pasos por seguir <br>
+        • Textos para el pastoreo<br>
+        • Preparación<br><br>
+
+        3. Plan de seguridad del salón del reino. <br><br>
+
+        4. Acceso directo a los territorios para el servicio (requiere autorización).<br>
+        <br>
+
+        5. Interesados: forma para informar personas que muestren interés y hablen otro idioma o no sean
+        de nuestro territorio.<br><br>
+        <P1 id="condiciones"></P1>
+        6. Precursorado auxiliar: forma para solicitar el precursorado auxiliar.<br><br>
+        7. Visita del superintendente de circuito (requiere autorización): los arreglos para la visita, recomendaciones,
+        cuentas, literatura,
+        etc...<br><br>
+      </p>
+    </div>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
+
+    <div class="content1">
+      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
+
+      <p>
+        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
+        formato digital.
+      </p>
+      <p>
+        No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
+        en parte.
+      </p>
+
+
+      <h3>Lo siguiente está prohibido: </h3>
+      <p>El enlace e información contenida es para uso único y exclusivo del cuerpo de ancianos de la
+        congregación Metrowest. Está prohibido compartir la aplicación o conversar sobre los datos presentados en la
+        aplicación con cualquier persona;
+        esto incluye los enlaces y documentos. Solo el cuerpo de ancianos puede autorizar acceso a la
+        aplicación y sus datos.
+      </p>
+      <p>La información contenida no se debe postear en las redes sociales ni debe publicar material gráfico,
+        publicaciones electrónicas, artículos de este medio digital de anuncios en
+        cualquier sitio web, sitio de intercambio de archivos, sitio de intercambio de vídeo o red social.
+        <br>
+      </p>
+    </div>
+
+    <div class="containera">
+      <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
+          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+    </div>
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </section>
+
+  <!--my scripts-->
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/GPS/sw.js',
+        { scope: '/GPS/' }
+      )
+    }
+  </script>
+  <!--SW-->
+
+</body>
+
+</html>
