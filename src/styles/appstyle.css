@@ -977,3 +977,8 @@ input#nombre {
     width: 100%;
     height: 350px;
 }
+
+/*-- pastoreo modal--*/
+.modal-content {
+    margin-top: 100px;
+}
