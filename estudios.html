@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Guide app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:description" content="Unidos por amor a Jehová, trabajando por la congregación.">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/GPS/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/assets/icons/maskable_icon_x192.png">
+  <link rel="icon" type="image/ico" sizes="48x48" href="public/assets/icons/icon_48.ico">
+  <link rel="icon" type="image/ico" sizes="32x32" href="public/assets/icons/icon_32.ico">
+  <link rel="icon" type="image/ico" sizes="16x16" href="public/assets/icons/icon_16.ico">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Boxicons CDN Link Nav var pequeno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- sheets and nav mode CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+
+<div class="fullbody">
+
+  <body>
+    <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+    <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
+          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+    <!-- .stellarnav header-->
+    <div class="header">
+      <a href="#">Metrowest GPS</a>
+      <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+      <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+      <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+        sostenerle las manos.<br>
+      </h3>
+    </div>
+    <!-- .stellarnav header-->
+
+    <!--my body-->
+    <!-- body contents -->
+    <section class="container">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>ESTUDIOS ASIGNADOS POR EL COMITÉ
+        DE
+        SERVICIO<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp"></i>
+      </h2>
+      <img src="public/assets/img/precursor.webp" alt="" class="imgLogo" />
+      <form name="google-sheet">
+        <div class="form">
+          <h2 class="section-header" id="section-header10">
+            <!--<span class="typed"></span>-->
+          </h2>
+          <div class="title">
+            <a href="#mrphekeModal1" class="btn btn-primary" data-toggle="modal"><i class="material-icons"></i>REVISAR
+              REGISTROS<img class="img2" title="lupa" src="public/assets/img/lupa.webp"><i><span
+                  class="button__text"></span></i></a>
+          </div>
+
+
+          <div class="inputfield">
+            <label>ID</label>
+            <input type="number" id="id" name="id" class="input" placeholder="Número de ID" required value="">
+            <label>Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre y apellido">
+          </div>
+          <div class="inputfield">
+            <label>Encargado</label>
+            <input type="text" id="encargado" name="encargado" class="input" placeholder="Encargado" value="">
+          </div>
+          <div class="inputfield">
+            <label>Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" class="input" placeholder="Número de Teléfono" value="">
+          </div>
+          <div class="inputfield">
+            <label>Dirección</label>
+            <textarea type="text" id="direccion" name="direccion" class="input" placeholder="Dirección"></textarea>
+          </div>
+          <div class="inputfield">
+            <label>Observaciones</label>
+            <textarea type="text" id="observaciones" name="observaciones" class="input"
+              placeholder="Observaciones"></textarea>
+          </div>
+
+        </div>
+
+        <div class="containera">
+          <div class="buttons-area">
+            <button class="button1" id="g1" onClick="insert_value()" value="Registrar">
+              <img class="img2" title="registros" src="public/assets/img/registros2.webp"><i><span
+                  class="button__text">Registrar</span></i>
+            </button>
+            <button class="button1" id="g3" onclick="update_value()">
+              <img class="img2" title="actualizar" src="public/assets/img/actualizar.webp"><i><span
+                  class="button__text">Actualizar</span></i>
+            </button>
+            <button class="button1" id="g4" onclick="delete_value()">
+              <img class="img2" title="borar" src="public/assets/img/borrar.webp"><i><span
+                  class="button__text">Borrar</span></i>
+            </button>
+          </div>
+
+          <h4>Busque los estudiante por su ID, si no conoce su ID solo déjelo en blanco y presione "Buscar"</h4>
+          <div class="inputfield">
+            <button type="button" id="buscar" class="button1" onclick="read_value($('#srchID').val())">
+              <img title="lupa" class="img2" src="public/assets/img/lupa.webp">
+              <i><span class="button__text">Buscar</span></i>
+            </button>
+            <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID">
+          </div>
+        </div>
+        <h4>Mueve la tabla a la izquiera o derecha, arriba o abajo para ver los detalles</h4>
+        <div id="loader"></div>
+        <p id="re"></p>
+        <div id="showData"></div>
+
+        <div class="louder-area">
+          <div></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+        </div>
+
+        <div align="center">
+          <!-- Memanggil loader-->
+          <div id="showData"></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+          <div id="showData">
+          </div>
+        </div>
+
+        <div class="containera">
+          <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
+              href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+          <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+        </div>
+        <div class="formulario__parrafo">
+          <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+        </div>
+
+      </form>
+    </section>
+
+    <div id="mrphekeModal1" class="modal fade">
+      <form name="google-sheet">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"
+                style="font-size:10pt;font-weight: bold;color:white;margin-top:60px;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+              <iframe
+                src="https://docs.google.com/spreadsheets/d/169jAZK5am-KuS0UVCHGYXlyqxLbu_vo2x-Ds1ktBTlE/edit?usp=sharing"
+                style="width: 100%;height: 500px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Top arow button on body -->
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Top arow button on body -->
+
+    <!-- Memanggil scripts-->
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+    <script src="public/registros.js"></script>
+
+    <!-- required stellarnav-->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript" src="public/stellarnav.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        jQuery('.stellarnav').stellarNav({
+          theme: 'dark',
+          breakpoint: 960,
+          position: 'right',
+        });
+      });
+    </script>
+    <!-- required stellarnav-->
+
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  </body>
+</div>
+
+</html>

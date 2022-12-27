@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Metrowest GPS" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
+          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest GPS</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <h2 class="section-header" id="section-header">
+        <i><img class="img4" alt="" src="public/assets/img/header1.webp"></i>INFORME DE ASISTENCIA A LAS REUNIONES<i>
+          <img class="img4" alt="" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+      <img src="public/assets/img/asistencia.webp" alt="" class="imgLogo" />
+
+      <div class="content1">
+        <p>
+          Entre la fecha, seleccione la reunion he informe la asistenci<br>
+        </p>
+      </div>
+
+      <!-- Asistencia -->
+      <div class="content2">
+        <div class="inputs">
+          <input type="date" name="Fecha" id="Fecha" format="dddd dd MMMM">
+          <label>Fecha</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" name="Acomodador" id="Acomodador" required>
+          <label>Acomodador</label>
+        </div>
+        <select input id="Reunion" name="Reunion" class="form-check-input" type="radius"
+          onchange="this.className=this.options[this.selectedIndex].className">
+          <option class="flechas" selected="true">---Reunión---</option>
+          <option class="flechasRoja" value="Entre semana">Entre semana</option>
+          <option class="flechasVerde" value="Fin de semana">Fin de semana</option>
+        </select>
+        <div class="inputs">
+          <input type="number" name="Asistencia" id="Asistencia">
+          <label>Asistencia</label>
+        </div>
+        <div class="inputs">
+          <input type="number" name="Zoom" id="Zoom">
+          <label>Zoom</label>
+        </div>
+      </div>
+      <div class="content1" id="respuesta"></div>
+      <div class="content1">
+        <button type="submit" id="submit" class="formulario__submit">Enviar</button>
+      </div><br>
+      <!-- Tabla Asistencia -->
+      <div class="content1">
+        <div class="content1">
+          <div class="inputfield">
+            <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID"
+              style=" display: none;padding: 3px;height: 40px;font-size: 20px;width: 100px;background-color:  #F5F5DC;color: #000;font-weight: bold;">
+          </div>
+        </div>
+        <div class="buttons-area">
+          <button type="button" class="button1" style="color:rgb(255, 255, 255);background-color:#633000b0;"
+            onclick="read_value($('#srchID').val())">
+            <img class="img2" src="public/assets/img/lupa.webp"><i><span class="button__text">Revisar</span></i>
+          </button>
+        </div>
+        <div id="loader"></div>
+        <p id="re"></p>
+        <div id="showData"></div>
+        <div class="louder-area">
+          <div></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+        </div>
+      </div>
+      <!-- Tabla Asistencia -->
+      <div class="content1">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+      </div>
+      <div class="content1">
+        <h2 class="titulo">Cuerpo de Ancianos, Metrowest<br> <span class="typed"></span></h2>
+      </div>
+
+      <h3>
+        RECORDATORIOS:
+      </h3>
+
+      <div class="content1">
+        <p>
+          1. LAS PERTURBACIONES MENORES:<br>
+          • Es mejor pasar por alto las perturbaciones triviales o de poca importancia creadas por individuos durante
+          las reuniones de congregación.<br>
+          • Sin embargo, si alguien persiste en una conducta que distraiga a otros, los ancianos (dos ancianos), le
+          deben pedir que se vaya.<br>
+          • Si no hubiera un segundo anciano disponible, se puede usar un siervo ministerial maduro.<br>
+          • Si se niega a irse, adviértanle que si no se retira y continúa distrayendo a otros se llamará a la
+          policía.<br>
+          • Si aun así no coopera, no hay necesidad de advertírselo por segunda vez, traten de alejar al individuo de la
+          congregación.<br>
+          • Cuando llegue la policía infórmenle que a la persona se le ha revocado la invitación implícita.
+        </p>
+      </div>
+      <div class="content1">
+        <p>
+          QUIENES EXHIBEN COMPORTAMIENTO INESTABLE:<br>
+          • Algunos pueden padecer trastornos emocionales, tal vez por haber interrumpido un tratamiento médico.<br>
+          • Aunque el individuo dé la impresión de no ser peligroso, durante la reunión pudiera tornarse ruidoso y
+          empezar a perturbar.<br>
+          • Averigüe si alguien en la congregación lo conoce o sabe de él, entonces pida ayuda a alguien que lo conozca,
+          como miembros de su familia.<br>
+          • Sea amable pero firme, si con su comportamiento inestable causa interrupciones, traten de llevarlo fuera del
+          auditorio.<br>
+          • Si la persona persiste, lo mejor sería llamar al 911 para pedir la intervención de la policía y una
+          ambulancia para que un profesional evalúe a la persona perturbada.
+
+        </p>
+      </div>
+      <div class="content1">
+        <p>
+          3. ANTE PERSONAS VIOLENTAS:<br>
+          • Como siervos de Dios sabemos bien que la Biblia describe a los hombres de los últimos días como “feroces”
+          <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=2Ti+3%3A3" target="_blank">(2Ti 3:3)</a><br>
+          • La palabra griega que se traduce como “feroces” significa “carente de compasión humana y sentimientos”
+          <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=g00+8%2F4+9" target="_blank">(g00 8/4 9)</a><br>
+          • En armonía con este principio, los expertos concuerdan en que cuando estalla la violencia lo mejor es
+          literalmente huir o esconderse
+          • Si percibimos peligro, lo primero es hacer una breve oración.<br>
+          • Indique a los presentes que deben huir y dígales claramente hacia dónde deben ir.<br>
+          • No active la alarma contra incendio, pues esto podría dirigir a las personas hacia los atacantes.<br>
+          • Si las víctimas bajo ataque no pueden escapar de sus atacantes y estos parecen determinados a lastimarlos,
+          un cristiano puede
+          repeler el ataque y hasta golpear en defensa propia si fuera necesario
+          <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=g91+8%2F7+13" target="_blank">(g91 8/7 13</a>;
+          <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=g87+22%2F11+28" target="_blank">g87 22/11 28)</a><br>
+          • Los ancianos deben hacer lo que razonablemente puedan para proteger a la congregación.<br>
+          • Si desde el principio la persona se comporta con violencia, ya sea que ataque a alguien físicamente o que
+          empiece a disparar, se debe llamar a la policía de inmediato y sin vacilar.
+        </p>
+      </div>
+      <h3>
+        Motivado por el amor, Jehová Dios protege y salvaguarda a su pueblo <a
+          href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Hch+20%3A28" target="_blank"> (Hch 20:28</a>; <a
+          href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Salmo+97%3A10" target="_blank">Salmo 97:10)</a>.
+      </h3>
+      <div class="content1">
+        <p>
+          • En imitación de Jehová, los que llevan la delantera —y eso incluye los acomodadores— brindan cuidado
+          protector para las ovejas de Dios <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Heb+13%3A17" target="_blank">
+            (Heb 13:17</a>; <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=w93+15%2F7+25-26" target="_blank">w93 15/7
+            25-26)</a>.<br>
+          • Jesús proporcionó un modelo perfecto para los acomodadores <a
+            href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1Pe+2%3A21" target="_blank">(1Pe 2:21)</a>.<br>
+          • Reflejó el amor de su Padre por los discípulos, pues los 'vigilaba' y los 'guardaba'
+          <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Juan+17%3A12" target="_blank">(Juan 17:12)</a>.
+        </p>
+      </div>
+
+      <!-- Top arow button on body -->
+      <div class="button">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+      <!-- Top arow button on body -->
+    </form>
+  </section>
+
+  <!--my scripts-->
+  <!--WhatsApp-->
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwhMYfndLi5XqCRx-xfmlzuPyYtQ6TaHhJpa-YTzWavbyPHjfvUDOcWYhH1VM1po40_ZQ/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => alert("Asistencia enviada exitosamente"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <!--WhatsApp-->
+
+  <script src="public/asistencia.js"></script>
+  <script src="public/registro-asistencia.js"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+</body>
+
+</html>

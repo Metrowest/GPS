@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Metrowest GPS</title>
 
   <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
@@ -24,21 +23,18 @@
   <meta property="og:description"
     content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
   <meta property="og:title" content="Metrowest GPS">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
   <meta property="og:url" content="https://metrowest.github.io/GPS/">
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
   <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
   <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
-  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
-  <link rel="mask-icon" href="public/assets/icons/mstile-144x144.png">
+  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
@@ -56,17 +52,6 @@
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
   <script type="module" href="/src/app-index.ts"></script>
   <!-- .stellarnav required -->
-
-  <!--SW-->
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register(
-        '/GPS/sw.js',
-        { scope: '/GPS/' }
-      )
-    }
-  </script>
-  <!--SW-->
 
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -183,180 +168,25 @@
   <!--my body-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>BIENVENIDOS A GPS DE METROWEST<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>LIMITES DEL TERRITORIO<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
 
-    <div class="containera">
-      <img title="logo" src="public/assets/img/precursor4.webp" class="imgLogo2" />
-    </div>
-    <h3>Unidos por amor a Jehová, trabajando por la congregación.
-    </h3>
-
-    <div class="content1">
-      <p>
-        Metrowest GPS (Guia, Proteccion y Seguridad) no sustituye el sitio oficial de la Organización Cristiana de los
-        Testigos de Jehová,
-        jw.org ni la aplicación JW Library. Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar
-        los informes y publicar los anuncios, eventos, programas de las reuniones de la congregación.
-      </p>
-      <p>
-        Este sitio se ha preparado con la intención de facilitar a los nombrados de la congregación Metrowest Spanish
-        las siguientes herramientas:<br><br>
-      </p>
-      <div class="content3">
-        1. <a href="asistencia.html"><i><img title="casa1" class="img6" src="public/assets/img/asistencia.webp">
-          </i></a>
-        <p-5>
-          Asistencia: forma para registrar la asistencia de manera digital.<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        2. <a href="desastre.html"><i><img title="casa1" class="img6" src="public/assets/img/tormenta1.webp">
-          </i></a>
-        <p-5>
-          Plan de emergencia: plan ante una emergencia natural, incluye:
-        </p-5>
-      </div>
-      <p-5>
-        • Responsabilidades<br>
-      </p-5>
-      <p-5>
-        • Plan aprobado por el cuerpo<br>
-      </p-5>
-      <p-5>
-        • Vigilancia ante huracán<br>
-      </p-5>
-      <p-5>
-        • Aviso de huracán<br>
-      </p-5>
-      <p-5>
-        • Después del huracán<br>
-      </p-5>
-      <p-5>
-        • Pasos por seguir <br>
-      </p-5>
-      <p-5>
-        • Textos para el pastoreo<br>
-      </p-5>
-      <p-5>
-        • Preparación<br><br>
-      </p-5>
-
-      <div class="content3">
-        3. <a href="salon.html"><i><img title="casa1" class="img6" src="public/assets/img/salon.webp">
-          </i></a>
-        <p-5>
-          Salón: plan de seguridad del salón del reino.<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        4. <a href="contactos.html"><i><img title="casa1" class="img6" src="public/assets/img/contactos.webp">
-          </i></a>
-        <p-5>
-          Contactos: lista de contactos, incluye: todos los hermanos de la congregación.<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        5. <a href="territorios.html"><i><img title="casa1" class="img6" src="public/assets/img/territorio1.webp">
-          </i></a>
-        <p-5>
-          Territorios: acceso directo a los territorios para el servicio (requiere autorización).<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        6. <a href="interes.html"><i><img title="casa1" class="img6" src="public/assets/img/precursor1.webp">
-          </i></a>
-        <p-5>
-          Interesados: forma para informar personas que muestren interés y hablen otro idioma o no sean
-          de nuestro territorio.<br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        7. <a href="precursorado.html"><i><img title="casa1" class="img6" src="public/assets/img/precursor.webp">
-          </i></a>
-        <p-5>
-          Precursorado auxiliar: forma para solicitar el precursorado auxiliar. <br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        8. <a href="estudios.html"><i><img title="casa1" class="img6" src="public/assets/img/biblia.webp">
-          </i></a>
-        <p-5>
-          Estudios: lista de estudios bíblicos asignados por el comité de servicio. <br><br>
-        </p-5>
-      </div>
-      <P1 id="condiciones"></P1>
-      <div class="content3">
-        9. <a href="recursos.html"><i><img title="casa1" class="img6" src="public/assets/img/recurso.webp">
-          </i></a>
-        <p-5>
-          Recursos: instrucciones y dirección para utilizar algunas de las funciones y herramientas incluye imágenes y
-          videos). <br><br>
-        </p-5>
-      </div>
-      <div class="content3">
-        10. <a href="visita.html"><i><img title="casa1" class="img6" src="public/assets/img/circuito.webp">
-          </i></a>
-        <p-5>
-          10. Visita: incluye los programas y arreglos para la visita del superintendente de circuito (requiere
-          autorización): recomendaciones, cuentas, literatura, etc... <br><br>
-        </p-5>
-      </div>
+    <img title="mapalarge" src="public/assets/img/territorio3.webp" class="imagemapalarge" />
 
 
-    </div>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-
-    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
-
-    <div class="content1">
-      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
-
-      <p>
-        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
-        formato digital.
-      </p>
-      <p>
-        No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
-        en parte.
-      </p>
-
-
-      <h3>Lo siguiente está prohibido: </h3>
-      <p>El enlace e información contenida es para uso único y exclusivo del cuerpo de ancianos de la
-        congregación Metrowest. Está prohibido compartir la aplicación o conversar sobre los datos presentados en la
-        aplicación con cualquier persona;
-        esto incluye los enlaces y documentos. Solo el cuerpo de ancianos puede autorizar acceso a la
-        aplicación y sus datos.
-      </p>
-      <p>La información contenida no se debe postear en las redes sociales ni debe publicar material gráfico,
-        publicaciones electrónicas, artículos de este medio digital de anuncios en
-        cualquier sitio web, sitio de intercambio de archivos, sitio de intercambio de vídeo o red social.
-        <br>
-      </p>
-    </div>
-
-    <div class="containera">
-      <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
-          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
-      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
-    </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
     </div>
+    <!-- Top arow button on body -->
     <div class="button">
-      <a href="#top" title="top "><i class="fas fa-arrow-up"></i></a>
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
+    <!-- Top arow button on body -->
   </section>
 
   <!--my scripts-->
-
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script type="text/javascript" src="public/stellarnav.js"></script>

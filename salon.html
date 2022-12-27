@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Metrowest GPS" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
+          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest GPS</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN DE SEGURIDA DEL SALÓN DEL
+      REINO<i>
+        <img title="header21" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <img title="salon" src="public/assets/img/salon.webp" class="imgLogo2" />
+    </div>
+
+    <div class="content1">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Medidas de seguridad<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+    </div>
+
+    <div class="containerb">
+      <img title="cuerpo1" src="public/assets/img/cuerpo1.webp" class="img8" />
+      <p>El cuerpo de ancianos ha acordado implementar las siguientes medidas de seguridad.
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        1. La entrada principal estará abierta 30 minutos antes del comienzo de las reuniones
+        de congregación. El hermano que abre el Salón del Reino será responsable
+        de velar la entrada hasta que llegue el acomodador que la vigila.<br><br>
+
+        2. El acomodador de la entrada cerrará con llave la puerta 10 minutos al comienzo del
+        programa y volverá a abrirla después de la oración final. Los que llegan
+        después que se cierre la puerta tendrán que accionar tocar la puerta para poder entrar.
+        Al mirar por la mirilla o pantalla de seguridad, el acomodador verificará
+        que conoce a la persona o que esta no parece presentar ninguna amenaza. Si el acomodador
+        no conoce a la persona, hará una breve entrevista para verificar sus
+        intenciones (ejemplo: estudia o es un familiar de algún miembro de la congregación, si
+        está de visita de donde, etc.).<br><br>
+      </p>
+    </div>
+    <div class="containerc">
+      <img title="acomodador1" class="img8" src="public/assets/img/seguridad1.webp">
+      <p>
+        3. El acomodador de la entrada vigilará las cámaras de seguridad y les comunicará a los
+        acomodadores del auditorio (2 de ellos), cualquier actividad que llame la atención. NO debe salir;
+        deberá quedarse en su posición.<br><br>
+      </p>
+    </div>
+    <div class="content1">
+      <p> 4. Al concluirse la reunión, el acomodador de la entrada abrirá la puerta y se mantendrá alerta
+        a cualquiera que desee entrar al Salón del Reino. Antes de irse, el acomodador de la entrada
+        será responsable de asegurar que las puertas estén cerradas con llave (la puerta principal y
+        las salidas de emergencia).<br><br>
+
+        5. Una vez al año el secretario de la congregación hará inventario de las llaves asignadas.
+        Se debe pedir al que ya no reúne los requisitos para tener una llave del Salón del Reino que
+        la devuelva inmediatamente.
+      </p><br><br>
+
+    </div>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Asignaciones de los acomodadores<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="content1">
+      <p>
+        Antes de cada reunión, será necesario ocupar tres diferentes puestos. La hora en que se deben
+        ocupar y quién los ocupa se indica abajo.<br>
+      </p>
+    </div>
+    <div class="containerc">
+      <img title="acomodador1" class="img8" src="public/assets/img/acomodador1.webp">
+      <p> 1. Acomodador de la entrada. Esta asignación comienza 30 minutos antes de cada reunión y
+        concluye después de que todos los asistentes hayan salido del edificio. Sus responsabilidades
+        incluyen lo siguiente:<br><br>
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        • El acomodador vigilará de cerca el uso de los baños, vestíbulo, uso de segunda sala además
+        de brindar ayuda donde se necesite.<br><br>
+
+        • En todo momento, el acomodador se mantendrá alerta a aquellos que deseen entrar por la
+        entrada abierta, y si son desconocidos comprobará amablemente sus intenciones. Si determina
+        que se debe poner cuidado especial a algún individuo, seguirá las instrucciones que figuran
+        abajo sobre “Cómo tratar con individuos a quienes hay que poner cuidado especial”.<br><br>
+      </p>
+    </div>
+    <div class="containerb">
+      <img title="acomodador1" class="img8" src="public/assets/img/acomodador2.webp">
+      <p>• Es responsable de cerrar la puerta con llave al inicio de la reunión y abrirla después de
+        la oración final.<br><br>
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        • El acomodador de la entrada hará un recorrido del estacionamiento solo si fuese necesario y
+        acompañado por otro acomodado; una linterna se mantendrá junto al sistema de seguridad para
+        que la usen.
+      </p>
+    </div>
+    <div class="containera">
+
+      <p>• Es responsable de vigilar las cámaras de seguridad y mantener una buena comunicación
+        con el acomodador del auditorio y el hermano asignado a seguridad informándole de cualquier
+        incidente o duda.
+      </p>
+      <img title="camara" src="public/assets/img/camara.webp" class="img8" />
+    </div>
+    <div class="containerb">
+      <img title="puerta" src="public/assets/img/puerta.webp" class="img8" />
+      <p>• Durante una alarma de incendio, el acomodador de las entradas ayudará a los acomodadores
+        del auditorio en la evacuación (vea abajo “Alarmas de incendio”).
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        2. Acomodador del auditorio. La asignación comienza 20 minutos antes de cada
+        reunión y termina después de que todos los asistentes hayan dejado el edificio.
+        Sus responsabilidades incluyen lo siguiente:<br><br>
+
+        • El acomodador del auditorio coordinará las asignaciones de los acomodadores.
+        Si hay un puesto que no esté atendido debería coordinar el remplazo con el
+        anciano asignado sobre los acomodadores.<br><br>
+
+        • Durante la reunión, este acomodador se ocupará principalmente del auditorio, la plataforma y la
+        temperatura. Se deben seguir las pautas del libro Organizados, capítulo 11, párrafo 1a que hay que
+        poner cuidado especial a algún individuo, seguirá las instrucciones que figuran abajo sobre “Cómo
+        tratar con individuos a quienes hay q4 al desempeñar la asignación de acomodador.<br><br>
+
+        • Si se determina que hay que poner cuidado especial a algún individuo, seguirá las instrucciones que
+        figuran abajo sobre “Cómo tratar con individuos a quienes hay que poner cuidado especial”.
+      </p>
+    </div>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>¿Como tratar con las
+      perturbaciones?<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <div class="content1">
+      <p>1. Cómo tratar con individuos a quienes hay que poner cuidado especial. Los acomodadores del
+        auditorio y otro anciano se acercarán al individuo. Si no pueden calmarlo, le pedirán
+        amablemente que se retire. Si rehúsa hacerlo, un anciano se pondrá en contacto con la policía
+        para recibir ayuda.
+      </p>
+    </div>
+
+    <div class="containerc">
+      <img title="alarma" src="public/assets/img/alarma.webp" class="img8" />
+      <p>2. Alarmas de incendio. Los acomodadores del auditorio se acercarán a la plataforma y avisarán
+        al orador que anuncie que todos deben salir a través de la salida más cercana. Los acomodadores
+        del auditorio y de las entradas seguirán el plan de evacuación que se. indica abajo.
+      </p>
+    </div>
+    <div class="containerc">
+      <p>
+        3. Emergencias médicas.
+      </p>
+    </div>
+    <div class="containerb">
+      <img title="ambulancia" src="public/assets/img/ambulancia.webp" class="img8" />
+      <p>
+        • Si se le informa a uno de los acomodadores en cuanto a una
+        emergencia médica, dicho hermano le avisará inmediatamente a un anciano,
+        y ambos irán al lugar del suceso.
+      </p>
+    </div>
+    <div class="containerc">
+      <img title="doctor" src="public/assets/img/doctor.webp" class="img8" />
+      <p>
+        • Si en la congregación hay profesionales de la salud
+        que puedan ayudar, se les comunicará.
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        • Además, un anciano se pondrá en contacto con los servicios locales de emergencia según sea
+        necesario. Si la emergencia médica ocurre durante la reunión el acomodador de las entradas se
+        encargará de que el paso esté libre de obstáculos para la persona.
+      </p>
+    </div>
+
+    <div class="containera">
+      <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
+          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10) </a>.</h3>
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+    </div>
+    <div class="formulario__parrafo">
+      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+    </div>
+    <!-- Top arow button on body -->
+    <div class="button">
+      <a href="#top" title="top "><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Top arow button on body -->
+  </section>
+
+  <!--my scripts-->
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+</body>
+
+</html>

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Metrowest GPS" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+      </li>
+      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
+          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp"></i>Predicación<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+            class="fa fa-angle-down"></i></a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest GPS</a>
+    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
+    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
+    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
+      sostenerle las manos.<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--my body-->
+  <section class="container">
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN ANTE UNA EMERGENCIA
+      NATURAL<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+
+    <div class="containera">
+      <P1 id="Responsabilidades"></P1>
+      <img title="tormenta1" src="public/assets/img/tormenta1.webp" class="img8" />
+
+      <h4>“El recordatorio de Jehová es fidedigno, hace sabio al inexperto.” <a
+          href="https://wol.jw.org/es/wol/l/r4/lp-s?q=SALMO+19%3A7" target="_blank">(SALMO 19:7) </a>.
+      </h4>
+    </div>
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Responsabilidades de los
+      encargados y Auxiliares de grupo<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <div class="containera">
+      <img title="tormenta2" src="public/assets/img/tormenta2.webp" class="img8" />
+    </div><br>
+    <h4>“Por eso, ya sea que estén comiendo, bebiendo o haciendo cualquier otra cosa,
+      háganlo todo para la gloria de Dios.” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1+Corintios+10%3A31"
+        target="_blank">(1 Corintios 10:31)</a>. La frase “cualquier otra cosa” definitivamente se puede
+        aplicar a la respuesta ante un desastre.
+    </h4>
+    <div class="containerc">
+      <img title="encargado" src="public/assets/img/a&m.webp" class="img8" />
+      <h4>
+        Ancianos y siervos ministeriales:
+      </h4> <br><br>
+    </div>
+    <div class="content1">
+      <p2>Obedecer las instrucciones de la organización de Jehová no sólo nos beneficia personalmente.
+        También da gloria a Jehová ya que otros están observando cómo actuamos durante una situación
+        tan difícil y angustiosa como es un desastre.<br>
+      </p2><br>
+      <p2>“Sean obedientes y sumisos a los que los dirigen,* porque ellos están cuidando de ustedes*
+        y van a rendir cuentas por eso” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Hebreos+13%3A17"
+          target="_blank">(Hebreos 13:17) </a>.
+      </p2><br><br>
+      <p2>
+        • Acudimos a nuestros ancianos para recibir instrucción en todos los aspectos de nuestra actividad
+        teocrática.<br>
+        • Esto incluye las primeras labores de socorro inmediatamente después de un desastre.
+      </p2><br>
+
+      <div class="containerc">
+          <h4>
+            Queremos que nuestra respuesta sea organizada y se lleve a cabo ordenadamente.
+          </h4>
+        </div>
+
+        <p2>
+        • Debemos mantenernos en contacto con los ancianos, especialmente con nuestro
+        superintendente de grupo de servicio, si se encuentra disponible.<br>
+        • Los ancianos nos dirán dónde encontrarnos, a qué familias hay que ayudar y qué
+        trabajo tiene prioridad.<br>
+        • Repasen las referencias teocráticas que se proveen al final de este Plan de respuesta, que les
+        ayudarán a estar mejor preparados y a responder más eficazmente a desastres naturales.
+      </p2>
+
+
+
+    </div>
+    <div class="containerb">
+      <img title="cuerpo2" src="public/assets/img/cuerpo2.webp" class="img8" />
+      <p2>
+        Los superintendentes, los ministeriales, el coordinador, el superintendente de circuito y la
+        sucursal son eslabones esenciales para velar por la seguridad y el bienestar de la congregación.
+      </p2>
+    </div>
+    <div class="content1">
+
+      <p2>
+        ***Todos debemos colaborar plenamente con ellos, pues eso contribuirá a que haya una buena
+        comunicación
+        y se
+        pueda
+        prestar la ayuda necesaria lo antes posible.
+      </p2><br><br>
+      <P1 id="Plan"></P1>
+      <p2>
+        ***Basado en la <a href="https://www.jw.org/finder?wtlocale=S&issue=2017-10&pub=g17&srcid=share"
+          target="_blank">¡Despertad! Número 5 de 2017</a>, titulada “Cuando golpea un desastre. Qué hacer para
+        sobrevivir”
+        y el "Plan de congregación para la preparación y respuesta frente a un desastre natural", provisto
+        por la
+        sucursal. Debe enviarse al
+        superintendente de circuito una copia del plan y otra de los datos de los publicadores. ***
+      </p2><br><br>
+    </div>
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Plan para la temporada de
+      huracanes<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <h3>
+      Superintendentes de Grupo
+    </h3>
+    <div class="table-responsive" id="no-more-tables">
+
+      <table class="table bg-white">
+
+        <thead class="bg-dark text-light">
+          <tr>
+            <th>Grupo</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td data-title="Grupo">#1</td>
+            <td data-title="Nombre">David Hernández</td>
+            <td data-title="Teléfono">(407) 501-9418</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#2</td>
+            <td data-title="Nombre">Carlos Fajardo</td>
+            <td data-title="Teléfono">(407) 579-8252</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#3</td>
+            <td data-title="Nombre">Jorge Carlo</td>
+            <td data-title="Teléfono">(407) 617-8351</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#4</td>
+            <td data-title="Nombre">Walter Figueroa</td>
+            <td data-title="Teléfono">(407) 617-3880</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#5</td>
+            <td data-title="Nombre">Jaime Cuervo</td>
+            <td data-title="Teléfono">(401) 330-0072</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#6</td>
+            <td data-title="Nombre">Harold Morales</td>
+            <td data-title="Teléfono">(787) 949-1964</td>
+          </tr>
+          <tr>
+            <td data-title="Grupo">#7</td>
+            <td data-title="Nombre">Juan Moa</td>
+            <td data-title="Teléfono">(407) 493-8534</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="containerb">
+      <p>
+        AGENDA:
+      </p>
+    </div>
+    <div class="containerb">
+      <img title="cuerpo1" src="public/assets/img/encargado1.webp" class="img8" />
+      <p>
+        Superintendentes de los grupos para el servicio del campo y sus auxiliares:
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        1. Asegúrense de mantener actualizada la información de contacto de cada publicador en su grupo
+        y de
+        proveer
+        al secretario los datos más recientes (sfla “Datos de contacto de los publicadores en caso de
+        emergencia”).
+      </p>
+      <p>
+        2. Determine qué publicadores peligran en caso de un desastre (inundación, fuertes vientos,
+        marejada
+        ciclónica,
+        deslizamientos de tierra, terremoto, etc.)
+      </p><br>
+
+      <p2>*Identifique quiénes tienen necesidades especiales (de mayor edad, confinados en su hogar, etc.)
+      </p2>
+
+
+      <p>3. Acompañado de su auxiliar (u otro hermano seleccionado por el cuerpo de ancianos), visite el
+        hogar de los
+        publicadores que pudieran estar bajo riesgo para inspeccionar las condiciones del edificio y las
+        inmediaciones.
+        Determine el grado de riesgo mediante las siguientes preguntas:
+      </p>
+
+      <p>
+        • ¿Han designado las autoridades seglares el área como zona de evacuación?<br><br>
+        • ¿Resistiría la estructura (paredes, ventanas y techo) fuertes vientos de tormenta?<br><br>
+        • ¿Se encuentra situada la casa en un área baja y susceptible a inundarse?<br><br>
+        • ¿Se encuentra situada la casa cerca al mar o ríos?<br><br>
+        • ¿Hay árboles cercanos que pudieran caer y dañar el edificio?<br><br>
+        • ¿Está la casa construida cerca de, o sobre una ladera propensa a los deslizamientos de tierra?
+      </p>
+    </div>
+    <div class="content1">
+      <img title="cabeza2" src="public/assets/img/cabeza2.webp" class="imgLogo2" />
+    </div>
+    <div class="content1">
+      <p>4. Reúnase, en compañía de su auxiliar, con cada cabeza de familia de aquellas
+        casas
+        que hayan
+        determinado que están bajo riesgo, para establecer lo siguiente:
+      </p>
+    </div>
+    <div class="content1">
+      <p2>* Obtenga la información detallada sobre la reubicación
+      </p2>
+
+      <p> • ¿Están ellos al tanto de los riesgos que se han identificado?
+        • ¿Tienen planes para reubicarse en caso de que una tormenta de magnitud amenazara? ¿Sería
+        segura
+        esa otra ubicación?
+      </p>
+      <p>
+        • Si no tienen planes, ¿estarían dispuestos a reubicarse temporalmente al hogar de otro
+        publicador (o a
+        un Salón del Reino si fuera necesario)?
+      </p>
+    </div>
+    <div class="containerc">
+      <img title="cabeza1" src="public/assets/img/cabeza1.webp" class="img8" />
+      <p> 5. Determine qué publicadores tienen casas “seguras”, y están dispuestos a proveer
+        alojamiento temporal a quienes lo necesiten. Para decidir cuáles casas serían apropiadas, emplee las
+        siguientes
+        preguntas:
+      </p>
+    </div>
+    <div class="content1">
+
+      <p> • ¿Está en buena condición espiritual la familia anfitriona?<br><br>
+        • ¿Está en buen estado la estructura de la casa y en una ubicación segura? (Para determinar
+        su
+        seguridad, vea los factores mencionados arriba)<P1 id="Vigilancia"></P1><br><br>
+        • ¿Cuántas personas adicionales a su familia podrían alojar y por cuánto tiempo?
+      </p><br><br>
+    </div>
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Vigilancia de Huracán
+      (“HURRICANE
+      WATCH”)<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <div class="containt1">
+      <h4><i><img title="vigilancia" class="imgLogo2" src="public/assets/img/vigilancia.webp"></i>
+      </h4>
+    </div>
+    <div class="containerb">
+      <img title="cuerpo1" src="public/assets/img/cuerpo2.webp" class="img8" />
+      <p> El Cuerpo de ancianos se reúne para repasar la información del Plan arriba
+        mencionado,
+        que cada
+        superintendente de grupo para el servicio
+        del campo recabó.
+      </p>
+    </div>
+
+    <div class="content1">
+      <p>
+        • Aprueben alojamientos temporales<br><br>
+        • Preparen planes de evacuación recomendados para hogares potencialmente bajo riesgo
+      </p>
+    </div>
+
+
+    <div class="containera">
+      <img title="LDC" src="public/assets/img/LDC.webp" class="img8" />
+
+      <p> Si el Departamento Local de Diseño y Construcción (LDC) confirma que la estructura del
+        Salón
+        del Reino es
+        segura, determinen, como último recurso, si se puede usar como albergue de socorro
+        temporal
+        para
+        los
+        publicadores en necesidad de alojamiento.
+      </p>
+      <P1 id="Aviso"></P1>
+    </div>
+    <div class="content1">
+      <p>De ser necesario implemente un plan de evacuación que incluirá a las personas mayores,
+        enfermas y con necesidades especiales; el Cuerpo de ancianos debe escoger quienes se encargaran).
+      </p><br><br>
+    </div>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Aviso de Huracán
+      (“HURRICANE
+      WARNING”)<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <div class="content1">
+      <i><img title="aviso" class="imgLogo2" src="public/assets/img/aviso.webp"></i>
+    </div>
+    <div class="content1">
+      <p>
+        Ponga en marcha el plan de evacuación por lo menos 36 horas antes de que las
+        condiciones meteorológicas adversas empiecen a afectar el área:
+      </p>
+      <p>
+        1. Después de haber sido aprobado por el Cuerpo de Ancianos, cada
+        superintendente les notificara a los publicadores los ajustes de las reuniones.<br><br>
+
+        2. El secretario se asegurará que los archivos de la congregación se encuentren
+        en un lugar seco y seguro.<br><br>
+      </p>
+    </div>
+    <div class="containerc">
+      <i><img title="banderas" class="img8" src="public/assets/img/banderas.webp"></i>
+      <p>
+        3. El Coordinador, Juan Moa, se comunicará con el “Operating Committee” (Comité de
+        Operaciones)
+        para asegurarse de que el Salón del Reino está preparado.<br>
+      </p>
+    </div>
+
+    <div class="containerb">
+      <img title="cabeza2" src="public/assets/img/cabeza2.webp" class="img8" />
+      <p>4. Dentro de las primeras 12 horas después de haber dado la alarma de “HURRICANE
+        WARNING” el
+        superintendente y su auxiliar se comunicará con cada familia de su grupo.
+      </p>
+    </div>
+    <div class="content1">
+
+      <p>Este reportará al coordinador la siguiente información:
+      </p>
+      <p>
+        • Condición de cada familia (ej. donde se encuentran, están refugiados en un lugar
+        seguro, necesitan ayuda para proteger ventanas, tienen suministros para los próximos 3 a 5
+        días, etc.…).<br><br>
+        • Verificar la información de contacto.<br><br>
+
+        6. Dentro de las primeras 24 horas de haberse dado la alarma de “HURRICANE WARNING” el
+        coordinador
+        llamara al Superintendente de Circuito (o al Superintendente de Asamblea, de no estar
+        disponible
+        <P1 id="Despues"></P1>el de Circuito) con el reporte de preparación de la congregación
+        confirmando
+        que todo está listo o que
+        necesitan ayuda.
+      </p><br><br>
+    </div>
+
+
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Inmediatamente
+      después de haber
+      pasado el
+      huracán<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+
+    <div class="containerb">
+      <img title="cabeza1" src="public/assets/img/cabeza1.webp" class="img8" />
+      <p>1. Cada encargado de Grupo = se reportará inmediatamente con el coordinador para
+        notificarle de su situación personal, si se necesita alguna ayuda y del resultado
+        de sus esfuerzos en comunicarse con los publicadores de su grupo.
+      </p>
+    </div>
+
+    <div class="containerc">
+      <img title="telefono" src="public/assets/img/telefono.webp" class="img8" />
+      <p>2. De inmediato póngase en contacto con todos los publicadores para determinar sus
+        necesidades inmediatas y
+        las condiciones en que se encuentran. Empiece a brindar ayuda en conformidad (si
+        fuera
+        posible, esto incluiría
+        una visita personal).
+      </p>
+    </div>
+    <div class="containerb">
+      <img title="casa2" class="img8" src="public/assets/img/casa2.webp">
+      <p>Junto a su auxiliar determine si se necesita ayuda. Reportara la información
+        pertinente
+        a:<br>
+      </p>
+    </div>
+    <div class="containt1">
+      <p>
+        • Condición del agua, comida, medicinas, heridas y accidentes.<br><br>
+        • Fuente de energía (servicio de ciudad o generador).<br><br>
+        • Condiciones del lugar de refugio (es seguro).<br><br>
+        • Magnitud de los daños causados (arboles, autos, techos y si los daños son de menor
+        o mayor magnitud).
+      </p>
+
+    </div>
+
+    <div class="containerc">
+      <img title="coordinador" class="img8" src="public/assets/img/coordinador.webp">
+      <p>3. El Coordinador verificara la condición del Salón del Reino y se lo reportara al
+        Superintendente de Circuito o al Superintendente de Asamblea.
+      </p>
+    </div>
+
+    <div class="containerb">
+      <img title="cuerpo1" class="img8" src="public/assets/img/cuerpo1.webp">
+      <p>
+        4. Dentro de las primeras 12 horas y de manera diligente, además de reportar la
+        información
+        mencionada anteriormente notifique lo siguiente:
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+        A. ¿Qué porcentaje de los publicadores (activos e inactivos) han podido contactar?<br><br>
+        B. ¿Ha sido posible para los superintendentes de grupo comunicarse en persona con los
+        que
+        tienen
+        necesidades especiales,
+        tales como los de edad avanzada, los enfermos o las familias monoparentales?<br><br>
+        C. ¿Ha habido heridos o muertos? ¿Se está dando la ayuda necesaria?
+      </p>
+    </div>
+    <div class="content1">
+      <img title="pastoreo1h" class="imgLogo2" src="public/assets/img/pastoreo1h.webp">
+
+      <p>
+        D. ¿Se han hecho planes para hacer visitas de pastoreo a los hermanos más afectados?<br>
+        E. Número de hogares con daños mayores ______<br>
+        F. Número de hogares con daños menores ______<br>
+        G. Número de hogares destruidos ______<br>
+        H. Número de familias en necesidad de refugio ______
+      </p>
+    </div>
+    <div class="containera">
+      <img title="telefono" src="public/assets/img/telefono.webp" class="img8" />
+      <p> 5. Dentro de las primeras 24 horas, el Coordinador se comunicará con el Superintendente
+        de
+        Circuito o el Superintendente de Asamblea y proveerá un reporte de la congregación.
+        También
+        se
+        asegurará que el “Chairman” del “Operating Committe” (El presidente del Comité de
+        Operaciones),
+        notifique al “LDC Chairman” (Departamento Local de Diseño y Construcción), de la
+        condición
+        del
+        Salón Del Reino ya sea para reparaciones de emergencia o reparaciones a largo plazo.
+      </p>
+    </div>
+
+    <div class="containerb">
+      <img title="familia1" class="img8" src="public/assets/img/familia.webp">
+      <p>
+        6. Información sobre el procedimiento:
+      </p>
+    </div>
+    <div class="content1">
+      <p>
+         Si hay publicadores traumatizados o hay quienes han sufrido heridas o pérdida de seres
+        queridos, el Superintendente de Circuito estará proveyendo comunicación y la ayuda
+        personal necesaria tan pronto como las circunstancias lo permitan.
+      </p>
+
+      <p>
+         Sírvanse notar que no es necesario dilatar el envío de cualquier informe preliminar
+        sobre
+        el
+        bienestar
+        de los publicadores al
+        superintendente de circuito a fin de obtener todos los detalles. Dentro de las primeras
+        24
+        horas
+        proporcionen la información
+        que tengan y luego sigan actualizándola diariamente hasta que se hayan localizado a
+        todos
+        los
+        publicadores.
+      </p>
+    </div>
+    <div class="containera">
+      <img title="LDC" class="img8" src="public/assets/img/LDC.webp">
+      <p>
+         También será preciso dar atención a evaluar los daños de los hogares y pertenencias de
+        los
+        publicadores afectados. Para
+        poder recibir ayuda a fin de atender este asunto, tengan la bondad de comunicarse
+        inmediatamente
+        con
+        el
+        Comité Regional
+        de Construcción después de haber contactado al superintendente de circuito. Este comité
+        les
+        dará
+        instrucciones adicionales
+        sobre cómo debe efectuarse dicha comunicación en caso de una emergencia o un desastre.
+      </p>
+    </div>
+    <div class="content1">
+      <p2>***Favor repasar el programa de labores iniciales de socorro según se delinea en
+        el material didáctico para la preparación y respuesta frente a los desastres al que se
+        hace
+        referencia abajo***
+      </p2>
+    </div>
+    <div class="content1">
+      <p>
+        Las siguientes referencias les ayudarán a prepararse y responder frente a un desastre
+        natural:
+      </p>
+    </div>
+
+    <div class="content1">
+      <p>
+        • Pastoreen, cap. 26, “Desastres y emergencias”<br><br>
+        • <a href="https://www.jw.org/finder?wtlocale=S&issue=2017-10&pub=g17&srcid=share"
+        target="_blank">¡Despertad! Número 5 de 2017</a>, “Cuando golpea un desastre.
+        Qué hacer para sobrevivir”<br><br>
+        • <a href="https://www.jw.org/finder?srcid=jwlshare&wtlocale=S&prefer=lang&docid=1102014262&par=76"
+        target="_blank">El Reino de Dios ya está gobernando, cap. 20, “Cuando azota un desastre”</a><br><br>
+        • Material didáctico para la preparación y respuesta frente a los desastres en jw.org
+      </p>
+      <p>
+        • Vaya a Documentos > Formularios > Desastres > Programa de preparación y respuesta
+        frente a los desastres<br><br>
+        • Vaya a Documentos > Archivos multimedia > Desastres > Programa de preparación y
+        respuesta frente a los desastres
+      </p>
+      <p>
+        • <a href="https://drive.google.com/file/d/1YN6AV8XnsKfMq0GahlKBzTBOi_NVUvTD/view?usp=sharing"
+          target="_blank">FORMULARIO: Tarjeta de instrucción: tornado/huracán/inundación</a>.
+        <br><br>
+        • <a href="https://drive.google.com/file/d/1FGCVtODVfVmgRsJMQbFc0o9D-TTJQCO8/view?usp=sharing"
+        target="_blank">FORMULARIO: Tarjeta de instrucción: terremoto</a>.
+        <br><br>
+        <P1 id="Pasos"></P1>
+        • <a href="https://drive.google.com/file/d/1EhdGXrplWhd99Jk3M1LlsUYp5ju7sf1P/view?usp=sharing"
+        target="_blank">FORMULARIO: Tarjeta de instrucción: incendio</a>.
+        <br><br>
+        • <a href="https://drive.google.com/file/d/1uvF12lZ1NkkCo9-9JJ4vrbBuhW4yUTPP/view?usp=sharing"
+        target="_blank">FORMULARIO: Tarjeta de instrucción: generadores portátiles</a>
+        <br><br>.
+      </p>
+
+    </div>
+    <div class="content1">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Pasos a seguir
+        cuando azota un huracán<i>
+          <img title="header1" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+    </div>
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <div class="containera">
+      <i><img title="cabeza2" class="img8" src="public/assets/img/cabeza2.webp"></i>
+      <p>
+        1. Los ancianos de la congregación se ponen en contacto con todos los publicadores
+      </p>
+    </div>
+    <div class="containerc">
+      <i><img title="telefono" class="imgLogo2" src="public/assets/img/telefono.webp"></i>
+      <p>
+        2. Los ancianos informan al coordinador del cuerpo de ancianos.<br><br>
+        3. Los coordinadores informan a los superintendentes viajantes y a otros hermanos
+        responsables
+        que
+        estén
+        en contacto con la sucursal
+      </p>
+    </div>
+    <div class="containerb">
+      <i><img title="pastoreo1v" class="imgLogo2" src="public/assets/img/pastoreo1v.webp"></i>
+      <p>
+        4. Se suministran alimentos, agua, refugio, atención médica y apoyo emocional y
+        espiritual
+        lo
+        antes
+        posible
+      </p>
+    </div>
+    <div class="containerc">
+      <i><img title="ayuda" class="imgLogo2" src="public/assets/img/ayuda.webp"></i>
+      <p>
+        5. La sucursal envía rápidamente al Comité de Coordinadores del Cuerpo Gobernante un
+        informe
+        sobre
+        la
+        situación y las necesidades.
+      </p>
+    </div>
+    <div class="containerb">
+      <i><img title="cuerpo4" class="imgLogo2" src="public/assets/img/cuerpo4.webp"></i>
+      <p>
+        6. El Comité de Socorro organiza las labores humanitarias y ayuda a los hermanos en su
+        recuperación
+        a
+        largo plazo.
+      </p>
+    </div>
+
+    <div class="containerc">
+      <i><img title="avion" class="imgLogo2" src="public/assets/img/avion.webp"></i>
+      <p>
+
+        7. El Comité de Coordinadores evalúa las necesidades y, si hace falta, aprueba la
+        intervención de voluntarios de otros países y ciudades
+      </p>
+      <P1 id="Textos"></P1>
+    </div>
+
+    <div class="content1">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Textos bíblicos
+        para consolar a las víctimas<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+    </div>
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        1. Génesis 18:25: “Es inconcebible de ti el que vayas a obrar de esta manera para dar
+        muerte
+        al
+        justo con el inicuo [...]. ¿El Juez de toda la tierra no va a hacer lo que es recto?”.
+      </p>
+      <p>
+        Significado: Dios siempre hace lo correcto. No es su culpa que mueran personas buenas en
+        los desastres naturales.
+      </p>
+    </div>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        2. Salmo 46:1, 2: “Dios es para nosotros refugio y fuerza, una ayuda que puede hallarse
+        prontamente
+        durante angustias. Por eso no temeremos, aunque la tierra sufra cambio”.
+      </p>
+      <p>
+        Significado: No importa lo que pase a nuestro alrededor, Dios siempre nos dará fuerzas.
+      </p>
+    </div>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        3. Isaías 63:9: “Durante el tiempo de toda la angustia de ellos le fue angustioso a él”.
+      </p>
+      <p>
+        Significado: Dios se pone en nuestro lugar y sufre cuando sufrimos.
+      </p>
+    </div>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        4. Juan 5:28, 29: “Viene la hora en que todos los que están en las tumbas conmemorativas
+        oirán
+        su
+        voz y
+        saldrán”.
+      </p>
+      <p>
+        Significado: Estamos seguros de que volveremos a ver a nuestros seres queridos que han
+        muerto,
+        porque
+        Dios le dará a Jesucristo el poder para resucitarlos.
+      </p>
+    </div>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        5. 1 Pedro 5:6, 7: “Humíllense, por lo tanto, bajo la poderosa mano de Dios [...]; a la
+        vez
+        que
+        echan
+        sobre él toda su inquietud, porque él se interesa por ustedes”.
+      </p>
+      <p>
+        Significado: Dios se preocupa mucho por nosotros y quiere que le contemos todo lo que
+        nos
+        angustia.
+      </p>
+    </div>
+    <div class="content1">
+      <i><img title="biblia" class="img4" src="public/assets/img/biblia.webp"></i>
+      <p>
+        6. Revelación 21:4: “Limpiará toda lágrima de sus ojos, y la muerte no será más, ni
+        existirá
+        ya
+        más
+        lamento ni clamor ni dolor. Las cosas anteriores han pasado”.
+      </p>
+      <p>
+        <P1 id="Preparacion"></P1>
+        Significado: Dios eliminará todo lo que nos hace sufrir, y eso incluye los desastres
+        naturales.
+      </p>
+    </div>
+    <div class="content1">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Preparación y
+        suministstros<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+    </div>
+    <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
+      <select aria-label="gourl" NAME="gourl">
+        <OPTION VALUE="">Selecciona un subtema</OPTION>
+        <OPTION VALUE="#Responsabilidades">Responsabilidades</OPTION>
+        <OPTION VALUE="#Plan">Plan de emergencia</OPTION>
+        <OPTION VALUE="#Vigilancia">Vigilancia ante huracán</OPTION>
+        <OPTION VALUE="#Aviso">Aviso de huracán</OPTION>
+        <OPTION VALUE="#Despues">Despúes del huracán</OPTION>
+        <OPTION VALUE="#Pasos">Pasos a seguir</OPTION>
+        <OPTION VALUE="#Textos">Textos para el pastoreo</OPTION>
+        <OPTION VALUE="#Preparacion">Preparación</OPTION>
+      </SELECT>
+      <INPUT TYPE=SUBMIT VALUE="Buscar" />
+    </FORM>
+    <div class="containera">
+      <i><img title="articulos" class="imgLogo2" src="public/assets/img/articulos.webp"></i>
+      <h3>
+        ¿Tiene todo lo necesario?
+      </h3>
+      <p>
+        Las organizaciones para la gestión de desastres instan a las familias a almacenar
+        suministros de
+        emergencia y revisarlos anualmente. Por supuesto, las necesidades varían según el lugar
+        y
+        las
+        circunstancias, así que averigüe qué recomiendan los servicios de protección civil de su
+        zona.<br><br>
+
+        Por lo general, se recomienda tener en casa al menos 11 litros (3 galones) de agua por
+        persona y
+        alimentos no perecederos, listos para su consumo, que sean suficientes para tres días.
+      </p>
+    </div>
+    <div class="containera">
+      <a href="articulos.html"><i><img title="backpack" class="img8" src="public/assets/img/backpack.webp"></i></a>
+      <p>
+        Además, algunas familias han preparado mochilas de emergencia con artículos como los
+        siguientes:
+      </p>
+
+      <p>
+        1. Mantas, una muda completa de ropa de abrigo y calzado resistente.<br><br>
+
+        2. Linterna, radio (a pilas o manivela) y pilas de repuesto.<br><br>
+
+        3. Botiquín de primeros auxilios y un silbato para pedir ayuda.<br><br>
+
+        4. Cubiertos, abrelatas, herramienta multiusos de bolsillo y fósforos a prueba de
+        agua.<br><br>
+
+        5. Mascarillas, cinta adhesiva a prueba de agua y lona plástica para cubrirse.<br><br>
+
+        6. Cepillos de dientes, jabón, toallas y papel higiénico.<br><br>
+
+        7. Artículos para el cuidado de niños y de personas mayores o enfermas.<br><br>
+
+        8. Un recipiente impermeable con medicamentos, copias de recetas médicas y documentos
+        importantes.<br><br>
+
+        9. Los números de teléfono de sus contactos de emergencia, lugares de encuentro y un
+        mapa de
+        la
+        zona.<br><br>
+
+        10. Tarjetas bancarias y dinero en efectivo.<br><br>
+
+        11. Un juego extra de las llaves de la casa y del automóvil.<br><br>
+
+        12.Papel, lápices, libros y juegos para los niños.<br><br>
+
+        13. Una Biblia.
+      </p>
+    </div>
+    <div class="containera">
+      <p>Para ver donde puede conseguir algunos de estos articulos presione la mochila.
+        <a href="articulos.html" target="_blank"> presione la mochila</a>, encontrara
+        algunos de estos articulos localmente o en internet.<br><br>
+      </p>
+      <a href="articulos.html"><i><img title="backpack" class="img8" src="public/assets/img/backpack.webp"></i></a>
+    </div><br>
+
+
+    <div class="containera">
+      <h4>Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno
+        a cada lado para
+        sostenerle las manos <a href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17#v=2:17:12" target="_blank">Éxodo
+          17:12</a>.
+      </h4>
+    </div>
+    <div class="containera">
+      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo" />
+      <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
+          href="https://wol.jw.org/es/wol/bl/r4/lp-s?q=Luc.%2017%3A10" target="_blank">(Luc. 17:10)</a>.</h3>
+    </div>
+    <!-- Top arow button on body -->
+    <div class="button">
+      <a href="#top" title="top "><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Top arow button on body -->
+  </section>
+
+  <!--my scripts-->
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <!--desastre-minimenu-->
+  <script src="public/minimenu.js"></script>
+
+  <script TYPE="text/javascript">
+    function dropdown(mySel) {
+      var myWin, myVal;
+      myVal = mySel.options[mySel.selectedIndex].value;
+      if (myVal) {
+        if (mySel.form.target) myWin = parent[mySel.form.target];
+        else myWin = window;
+        if (!myWin) return true;
+        myWin.location = myVal;
+      }
+      return false;
+    }
+  </script>
+  <!--desastre-minimenu-->
+
+</body>
+
+</html>
