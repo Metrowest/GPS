@@ -811,6 +811,16 @@ input#nombre {
     border-bottom: 2px solid #005691;
 }
 
+  /*--Tabla myTabla-Buscar--*/
+input#srchID {
+    display: none;
+}
+
+.louder-area {
+    display: none;
+  }
+  /*--Tabla myTabla-Buscar--*/
+
 .flechasRoja {
     background-color: red;
     font-size: 24px;
