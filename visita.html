@@ -364,6 +364,40 @@
         </div>
       </div>
     </div>
+<!--Tabla myTabla-Buscar-->
+    <form name="google-sheet">
+      <div class="form">
+        <h2 class="section-header" id="section-header10">
+          <!--<span class="typed"></span>-->
+        </h2>
+        <h4>Arreglos para el pastoreo, estudios y revisitas; presione "Buscar"</h4>
+        <div class="inputfield">
+          <button type="button" id="buscar" class="button1" onclick="read_value($('#srchID').val())">
+            <img title="lupa" class="img2" src="public/assets/img/lupa.webp">
+            <i><span class="button__text">Buscar</span></i>
+          </button>
+          <input type="number" name="srchID" id="srchID" placeholder="Buscar por ID">
+        </div>
+      </div>
+      <h4>Mueva la tabla a la izquiera o derecha, arriba o abajo para ver los detalles</h4>
+      <div id="loader"></div>
+      <p id="re"></p>
+      <div id="showData"></div>
+      <div class="louder-area">
+        <div></div>
+        <div id="loader"></div>
+        <p id="re"></p>
+      </div>
+
+      <div align="center">
+        <!-- Memanggil loader-->
+        <div id="showData"></div>
+        <div id="loader"></div>
+        <p id="re"></p>
+        <div id="showData">
+        </div>
+      </div>
+    </form>
 
     <div class="containera">
       <h3>Cuerpo de ancianos. Solo hemos hecho lo que teníamos que hacer <a
@@ -384,7 +418,7 @@
   </section>
 
   <!--my scripts-->
-
+  <script src="public/pastoreo.js"></script>
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script type="text/javascript" src="public/stellarnav.js"></script>
