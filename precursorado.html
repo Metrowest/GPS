@@ -159,14 +159,14 @@
   <div class="header">
     <a href="#">Metrowest GPS</a>
     <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
-    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
-    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
-      sostenerle las manos.<br>
+    <img title="logolarge" src="public/assets/img/precursor.webp" class="imgLogo2" />
+    <h3> ”Por lo tanto, sigan buscando primero el Reino y la justicia de Dios, y
+      entonces recibirán también todas esas cosas". (Mateo 6:33).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
 
-  <!--my body-->
+  <!--body original-->
   <section class="container">
     <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
       <h2 class="section-header" id="section-header">
@@ -174,7 +174,6 @@
           <img class="img4" alt="" src="public/assets/img/header2.webp">
         </i>
       </h2>
-      <img src="public/assets/img/precursor.webp" alt="" class="imgLogo" />
       <div class="content1">
         <p>
           Debido a mi amor a Jehová y mi deseo de ayudar al prójimo a
@@ -249,7 +248,8 @@
       <div class="containerb">
         <a href="precursorado2.html"><i><img title="precursorado2" class="img8"
               src="public/assets/img/precursor5.png"></i></a>
-        <h3><a href="precursorado2.html" target="_blank">Una magnífica meta de servicio</a>
+        <h3>Vea el articulo titilado <a href="precursorado2.html" target="_blank">"Una magnífica meta para el nuevo año
+            de servicio"</a>
         </h3>
       </div>
       <div class="content1" id="respuesta"></div>
@@ -272,18 +272,12 @@
           3. ¿Han consultado con su superintendente de grupo?
         </p>
       </div>
-
-      <!-- Top arow button on body -->
-      <div class="button">
-        <a href="#top"><i class="fas fa-arrow-up"></i></a>
-      </div>
-      <!-- Top arow button on body -->
-
     </form>
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
   </section>
 
-  <!--my scripts-->
-  <!--WhatsApp-->
   <script>
     const scriptURL =
       'https://script.google.com/macros/s/AKfycbwA6MRAFklwdoPIbyW7CnebniyOtqLLkVbEidbDVgVj9IyL4M-ug2Oa8JUtzJT9glLQow/exec'
@@ -298,9 +292,43 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-    <!--WhatsApp-->
+
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script>
+    $("a").click(function () {
+      $("nav").removeClass("w--open");
+    });
+    $("a").click(function () {
+      $("div").removeClass("w--open");
+    });
+  </script>
+
+
 
   <script src="public/prec.rojo.js"></script>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -316,6 +344,7 @@
   </script>
   <!-- required stellarnav-->
 
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 </body>
 
 </html>

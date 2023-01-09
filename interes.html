@@ -157,15 +157,16 @@
   <!-- .stellarnav header-->
   <div class="header">
     <a href="#">Metrowest GPS</a>
-    <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
-    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
-    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
-      sostenerle las manos.<br>
+    <h1>Trabajando Unidos Como Congregación</h1>
+    <img title="logolarge" src="public/assets/img/Pastoreo2.webp" class="imgLogo2" />
+    <h3> Presta constante atención a tu conducta y a tu enseñanza. No dejes de hacer
+      estas cosas, pues así te salvarás a ti mismo y también a los que te escuchan.
+      (1 Timoteo 4:16).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
 
-  <!--my body-->
+  <!--body original-->
   <section class="container">
     <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
       <h2 class="section-header" id="section-header">
@@ -173,7 +174,7 @@
           <img title="header2" class="img4" src="public/assets/img/header2.webp">
         </i>
       </h2>
-      <img title="logolarge" src="public/assets/img/predicacion1.webp" class="imgLogo2" />
+
       <h3>Datos de la persona interesada
       </h3>
 
@@ -250,16 +251,15 @@
       <div class="formulario__parrafo">
         <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
       </div>
-      <!-- Top arow button on body -->
-      <div class="button">
-        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+      <div class="content2">
+        <h2 class="titulo">Cuerpo de Ancianos<br> <span class="typed"></span></h2>
       </div>
-      <!-- Top arow button on body -->
     </form>
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
   </section>
 
-  <!--my scripts-->
-  <!--WhatsApp-->
   <script>
     const scriptURL =
       'https://script.google.com/macros/s/AKfycbwIYoZt2WmS7S5QaFU4ENU7x0HhE4aCLWRRXGVUFUV0NUOZKwsuuE-TCs_iQk5t279N6Q/exec'
@@ -274,8 +274,9 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
-<script src="public/interes.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -291,6 +292,36 @@
   </script>
   <!-- required stellarnav-->
 
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  <script src="public/interes.js"></script>
+  <script type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script>
+    $("a").click(function () {
+      $("nav").removeClass("w--open");
+    });
+    $("a").click(function () {
+      $("div").removeClass("w--open");
+    });
+  </script>
 </body>
 
 </html>

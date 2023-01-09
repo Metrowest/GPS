@@ -159,9 +159,14 @@
   <div class="header">
     <a href="#">Metrowest GPS</a>
     <h2>Unidos por amor a Jehová, trabajando por la congregación</h2>
-    <img title="logolarge" src="public/assets/img/logo.webp" class="img8" />
-    <h3>Éxodo 17:12 Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno a cada lado para
-      sostenerle las manos.<br>
+    <h2 class="section-header" id="section-header">
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN ANTE UNA EMERGENCIA
+      NATURAL<i>
+        <img title="header2" class="img4" src="public/assets/img/header2.webp">
+      </i>
+    </h2>
+    <img title="logolarge" src="public/assets/img/tormenta1.webp" class="img8" />
+    <h3> “El recordatorio de Jehová es fidedigno, hace sabio al inexperto.” (SALMO 19:7).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
@@ -169,11 +174,13 @@
   <!--my body-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PLAN ANTE UNA EMERGENCIA
-      NATURAL<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Responsabilidades de los
+      encargados y Auxiliares de grupo<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
+          <P1 id="Responsabilidades"></P1>
+
     <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST onSubmit="return dropdown(this.gourl)">
       <select aria-label="gourl" NAME="gourl">
         <OPTION VALUE="">Selecciona un subtema</OPTION>
@@ -188,30 +195,16 @@
       </SELECT>
       <INPUT TYPE=SUBMIT VALUE="Buscar" />
     </FORM>
-
-    <div class="containera">
-      <P1 id="Responsabilidades"></P1>
-      <img title="tormenta1" src="public/assets/img/tormenta1.webp" class="img8" />
-
-      <h4>“El recordatorio de Jehová es fidedigno, hace sabio al inexperto.” <a
-          href="https://wol.jw.org/es/wol/l/r4/lp-s?q=SALMO+19%3A7" target="_blank">(SALMO 19:7) </a>.
-      </h4>
-    </div>
-
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>Responsabilidades de los
-      encargados y Auxiliares de grupo<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
     <div class="containera">
       <img title="tormenta2" src="public/assets/img/tormenta2.webp" class="img8" />
     </div><br>
-    <h4>“Por eso, ya sea que estén comiendo, bebiendo o haciendo cualquier otra cosa,
-      háganlo todo para la gloria de Dios.” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1+Corintios+10%3A31"
-        target="_blank">(1 Corintios 10:31)</a>. La frase “cualquier otra cosa” definitivamente se puede
-        aplicar a la respuesta ante un desastre.
-    </h4>
+    <h4>“Por eso, ya sea que estén comiendo, bebiendo o haciendo cualquier otra cosa, háganlo todo para la gloria de Dios.” <a href="https://wol.jw.org/es/wol/l/r4/lp-s?q=1+Corintios+10%3A31"
+        target="_blank">(1 Corintios 10:31)</a>. La frase “cualquier otra cosa” definitivamente se puede aplicar a la respuesta ante un
+      desastre.
+    </h4><br>
+
+
+
     <div class="containerc">
       <img title="encargado" src="public/assets/img/a&m.webp" class="img8" />
       <h4>
@@ -1079,7 +1072,9 @@
     <!-- Top arow button on body -->
   </section>
 
-  <!--my scripts-->
+  <!--desastre-->
+  <script src="public/minimenu.js"></script>
+
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script type="text/javascript" src="public/stellarnav.js"></script>
@@ -1094,8 +1089,7 @@
   </script>
   <!-- required stellarnav-->
 
-  <!--desastre-minimenu-->
-  <script src="public/minimenu.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 
   <script TYPE="text/javascript">
     function dropdown(mySel) {
@@ -1110,7 +1104,6 @@
       return false;
     }
   </script>
-  <!--desastre-minimenu-->
 
 </body>
 
