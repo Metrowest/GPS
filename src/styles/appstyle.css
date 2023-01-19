@@ -381,7 +381,7 @@ table#myTable {
     padding: 5px;
     position: relative;
     overflow-y: scroll !important;
-    max-height: 250px;
+    max-height: 350px;
 }
 
 .table.bg-white {
