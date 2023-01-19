@@ -7,11 +7,12 @@ function insert_value() {
 
     var id1= $("#id").val();
     var nombre= $("#nombre").val();
+    var familia= $("#familia").val();
     var direccion= $("#direccion").val();
     var telefono= $("#telefono").val();
     var contactos= $("#contactos").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
+    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&familia="+familia+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -28,11 +29,12 @@ function insert_value() {
 
     var id1= $("#id").val();
     var nombre= $("#nombre").val();
+    var familia= $("#familia").val();
     var direccion= $("#direccion").val();
     var telefono= $("#telefono").val();
     var contactos= $("#contactos").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
+    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&familia="+familia+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -50,11 +52,12 @@ function insert_value() {
     $('#mySpinner').addClass('spinner');
     var id1= $("#id").val();
     var nombre= $("#nombre").val();
+    var familia= $("#familia").val();
     var direccion= $("#direccion").val();
     var telefono= $("#telefono").val();
     var contactos= $("#contactos").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
+    var url = script_url+"?callback=ctrlq&direccion="+direccion+"&telefono="+telefono+"&familia="+familia+"&contactos="+contactos+"&nombre="+nombre+"&id="+id1+"&action=delete";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -89,14 +92,16 @@ function insert_value() {
      var cell2 = row.insertCell(1);
      var cell3 = row.insertCell(2);
      var cell4 = row.insertCell(3);
-     var cell5 = row.insertCell(4);///////////////////
+     var cell5 = row.insertCell(4);
+     var cell6 = row.insertCell(5);///////////////////
      row.style.background = "black";
 
      cell1.innerHTML = "<b>ID</b>";
      cell2.innerHTML = "<b>Nombre</b>";
-     cell3.innerHTML = "<b>Dirección</b>";
-     cell4.innerHTML = "<b>Teléfono</b>";
-     cell5.innerHTML = "<b>Contactos</b>";//////////////////
+     cell3.innerHTML = "<b>Familia</b>";
+     cell4.innerHTML = "<b>Dirección</b>";
+     cell5.innerHTML = "<b>Teléfono</b>";
+     cell6.innerHTML = "<b>Contactos</b>";//////////////////
 
    //        alert(json.records);
         // masukkan data ke dalam tabel
@@ -109,6 +114,8 @@ function insert_value() {
        tabCell.innerHTML = json.records[i].ID;
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Nombre;
+       tabCell = tr.insertCell(-1);
+       tabCell.innerHTML = json.records[i].Familia;
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Dirección;
        tabCell = tr.insertCell(-1);
@@ -128,6 +135,8 @@ function insert_value() {
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Nombre;
        tabCell = tr.insertCell(-1);
+       tabCell.innerHTML = json.records[i].Familia;
+       tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Dirección;
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Teléfono;
@@ -144,6 +153,7 @@ function insert_value() {
 
         $("#id").val("")
         $("#nombre").val("")
+        $("#familia").val("")
         $("#direccion").val("")
         $("#telefono").val("")
         $("#contactos").val("")
@@ -168,11 +178,13 @@ function insert_value() {
    function tableText(tableRow) {
      var id = tableRow.childNodes[0].innerHTML;
      var nombre = tableRow.childNodes[1].innerHTML;
-     var direccion = tableRow.childNodes[2].innerHTML;
-     var telefono = tableRow.childNodes[3].innerHTML;
-     var contactos = tableRow.childNodes[4].innerHTML;//////////
+     var familia = tableRow.childNodes[2].innerHTML;
+     var direccion = tableRow.childNodes[3].innerHTML;
+     var telefono = tableRow.childNodes[4].innerHTML;
+     var contactos = tableRow.childNodes[5].innerHTML;//////////
      $("#id").val(id)
      $("#nombre").val(nombre)
+     $("#familia").val(familia)
      $("#direccion").val(direccion)
      $("#telefono").val(telefono)
      $("#contactos").val(contactos)
@@ -184,7 +196,7 @@ function insert_value() {
   _gaq.push(['_trackPageview']);
 
   var script_url =
-      "https://script.google.com/macros/s/AKfycbxSLLAjBZV4Cr0L7Q6Kd2zq48Jh8DZsibT90FjySJ0LBJivA9W-sAVCDsWtt2-nzYpM/exec"; /////////////////
+      "https://script.google.com/macros/s/AKfycbwbUFqj7W64lzwMGE0NH8xON_cyt_AW-SM4UIG91ngF_dEKkkoVyJrWIUSE95AUqU_0/exec"; /////////////////
 
   (function () {
       var ga = document.createElement('script');
