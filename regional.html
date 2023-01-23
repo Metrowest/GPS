@@ -61,16 +61,6 @@
   <script type="module" href="/src/app-index.ts"></script>
   <!-- required -->
 
-  <!--SW-->
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register(
-        '/Service/sw.js',
-        { scope: '/Service/' }
-      )
-    }
-  </script>
-
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
@@ -85,11 +75,8 @@
     <ul>
       <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
       </li>
-      <li><a href="asistencia.html"><i><img title="casa1" class="img6"
-              src="public/assets/img/asistencia.webp"></i>Asistencia</a>
-      </li>
-      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/tormenta1.webp"></i>Proteccion
-          y<br>Seguridad<i class="fa fa-angle-down"></i></a>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación<i class="fa fa-angle-down"></i></a>
         <ul>
           <li>
             <a href="desastre.html">
@@ -105,6 +92,11 @@
           </li>
           <li><a href="contactos.html"><i><img title="contactos" class="img6"
                   src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
+          <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
           </li>
         </ul>
       </li>
@@ -197,8 +189,6 @@
             </a>
           </li>
         </ul>
-      </li>
-      <li><a href="visita.html"><i><img title="visita" class="img6" src="public/assets/img/circuito.webp"></i>Visita</a>
       </li>
     </ul>
   </div>
