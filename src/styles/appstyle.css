@@ -992,3 +992,156 @@ input#srchID {
 .modal-content {
     margin-top: 100px;
 }
+
+/*-- horario auxiliar--*/
+#no-more-tables1 {
+    max-width: 100%;
+    min-width: 200px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+}
+
+#no-more-tables1 td {
+    background-color: #ffe2c6;
+    color: #000;
+    text-align: center;
+    margin: auto;
+}
+
+#no-more-tables1 th {
+    text-align: center;
+}
+
+#no-more-tables1 tr {
+    background-color: #03468c;
+    color: #fff;
+}
+
+.no-more-tables1 tbody tr:last-of-type {
+    border-bottom: 2px solid #03468c;
+}
+
+option,
+select {
+    background-color: #95fefe;
+    color: rgb(0, 0, 0);
+}
+
+option,
+select {
+    border-radius: 10px;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    transition: .3s;
+    text-align: center;
+    margin: 5px;
+    border-bottom: 2px solid #000000;
+}
+
+/*--popup--*/
+.buttong {
+    font-size: 1em;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid #001428;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #f4fc04;
+  }
+
+.buttong:hover {
+    background: #000000;
+    border: 2px solid #020202;
+    color: rgb(255, 255, 255);
+}
+
+.buttonh {
+    font-size: 1em;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border: 2px solid #001428;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #03468c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonh:hover {
+    background: #070707;
+    border: 2px solid #020202;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    border-radius: 50px;
+    overflow-y: scroll !important;
+    max-height: 350px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #061bd8;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
