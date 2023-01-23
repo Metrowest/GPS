@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Metrowest GPS" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <link rel="mask-icon" href="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- .stellarnav required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <script type="module" href="/src/app-index.ts"></script>
+  <!-- .stellarnav required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <div id="printableArea">
+    <!-- .stellarnav header-->
+    <div class="header2">
+      <h1>
+        HORARIO PARA<br>EL PRECURSORADO
+      </h1>
+      <h2>“Y los envió a predicar el Reino de Dios...” (Lucas 9:2).</h2>
+    </div>
+    <!-- .stellarnav header-->
+
+    <!--my body-->
+    <section class="containerh">
+      <!--horario imprimir o PDF-->
+      <button id="a2" class="button-print-or-save-document">
+        <img title="territorio1" class="g3" src="public/assets/img/print.png">
+        Imprimir
+      </button>
+      <!--horario imprimir o PDF-->
+
+      <h2> <input type="text" id="nombre" name="nombre" class="input"
+        placeholder="Nombre y apellido">
+      </h2>
+
+      <button id="a2" onclick="window.location.href = 'precursorado.html';">
+        <img title="horario" class="g3" src="public/assets/img/precursor4.webp">Regresar
+      </button>
+
+      <div class="table-responsive" id="no-more-tables1">
+        <table class="table-bg-white1">
+
+          <thead class="bg-dark text-light">
+            <tr>
+              <th> <a class="buttong" href="#popup1">Ayuda</a></th>
+              <th>7am<br>calles</th>
+              <th>9:30am<br>salón</th>
+              <th>9:30am<br>zoom</th>
+              <th>6:30pm<br>zooms</th>
+              <th>6:30pm<br>salón</th>
+              <th>1pm<br>salón</th>
+            </tr>
+          </thead>
+
+          <tbody class="tbody1" id="tbody1">
+            <tr>
+              <td data-title="Horario">lunes</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+              </td>
+              <td data-title="6:30pm zoom">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">martes</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am zoom">
+              </td>
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">miercoles</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30pm zoom">
+              </td>
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">jueves</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am zoom">
+              </td>
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">viernes</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am zoom">
+              </td>
+              <td data-title="6:30pm zoom">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">sábado</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am zoom">
+              </td>
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+            </tr>
+            <tr>
+              <td data-title="Horario">domingo</td>
+              <td data-title="7am calles">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="9:30am">
+              </td>
+              <td data-title="9:30am zoom">
+                <FORM class="projects" ACTION="../cgi-bin/redirect.pl" METHOD=POST
+                  onSubmit="return dropdown(this.gourl)">
+                  <select class="selecth" aria-label="gourl" NAME="gourl">
+                    <OPTION class="selecth">0</OPTION>
+                    <OPTION class="selecth">1 hora</OPTION>
+                    <OPTION class="selecth">2 hora</OPTION>
+                    <OPTION class="selecth">3 hora</OPTION>
+                    <OPTION class="selecth">4 hora</OPTION>
+                    <OPTION class="selecth">5 hora</OPTION>
+                    <OPTION class="selecth">6 hora</OPTION>
+                    <OPTION class="selecth">7 hora</OPTION>
+                    <OPTION class="selecth">8 hora</OPTION>
+                  </SELECT>
+                </FORM>
+              </td>
+              <td data-title="6:30pm zoom">
+              </td>
+              <td data-title="6:30pm en persona">
+              </td>
+              <td data-title="1pm en persona">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="popup1" class="overlay">
+          <div class="popup"><a class="close" href="#Tabla">&times;</a>
+            <h2>Instrucciones para imprimir una copia</h2>
+
+            <div class="content">
+              <p>
+                1. Programe su horario<br><br>
+                2. Presione imprimir<br><br>
+                En la ventana que abre:<br><br>
+                3. Seleccione la opción
+                imprimir o guardar una copia en PDF<br><br>
+                4. Seleccione la opción horizontal<br><br>
+                5. Presione imprimir o guardar (si selecciono guardar copia en PDF)<br><br>
+                6. Vea la ilustración, puede ayudarle con el proceso <br><br><a class="buttonh"
+                  href="public/assets/img/print2.png" target="_blank">Ilustración</a>
+                <br><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top arow button on body -->
+      <div class="button">
+        <a href="#top" title="top "><i class="fas fa-arrow-up"></i></a>
+      </div>
+      <!-- Top arow button on body -->
+    </section>
+  </div>
+  <!--horario dropdown-->
+  <script src="public/minimenu.js"></script>
+
+  <!--horario imprimir o PDF-->
+  <script>
+    const buttonPrintOrSaveDocument = document.querySelector(
+      ".button-print-or-save-document"
+    );
+
+    function printOrSave() {
+      window.print();
+    }
+
+    buttonPrintOrSaveDocument.addEventListener("click", printOrSave);
+  </script>
+  <!--horario imprimir o PDF-->
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  <script TYPE="text/javascript">
+    function dropdown(mySel) {
+      var myWin, myVal;
+      myVal = mySel.options[mySel.selectedIndex].value;
+      if (myVal) {
+        if (mySel.form.target) myWin = parent[mySel.form.target];
+        else myWin = window;
+        if (!myWin) return true;
+        myWin.location = myVal;
+      }
+      return false;
+    }
+  </script>
+
+</body>
+
+</html>

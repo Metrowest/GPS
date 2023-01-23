@@ -14,13 +14,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:width" content="1146">
-  <meta property="og:image:height" content="600">
-  <meta property="og:description" content="Este es el momento de hacer los planes.">
-  <meta property="og:title" content="Una Magnifica Meta">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le presenta el plan de emergencias y algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
   <meta property="og:image"
-    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons3/og-image.jpg?raw=true">
-  <meta property="og:url" content="https://metrowest.github.io/Service/precursorado2.html">
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -31,14 +32,20 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons3/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons3/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons3/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
   <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#d90000">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
+
 
   <!-- light mode and dark mode CSS -->
   <link rel="stylesheet" media="(prefers-color-scheme:light)"
@@ -50,12 +57,19 @@
   <!-- required -->
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
-  <link rel="stylesheet" type="text/css" media="all" href="src/styles/horariotable.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/countdown.css">
+  <script type="module" href="/src/app-index.ts"></script>
   <!-- required -->
 
-  <script type="module" href="/src/app-index.ts"></script>
-
-  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+  <!--SW-->
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/Service/sw.js',
+        { scope: '/Service/' }
+      )
+    }
+  </script>
 
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -65,7 +79,6 @@
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
-  <app-index></app-index>
 
   <!-- .stellarnav -->
   <div class="stellarnav">
@@ -193,114 +206,78 @@
 
   <!-- .stellarnav header-->
   <div class="header">
-    <a href="#">Metrowest Service </a>
-    <h1>Trabajando Unidos Como Congregación</h1>
-    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
-    <h3>Presta constante atención a tu conducta y a tu enseñanza. No dejes de
-      hacer estas cosas, pues así te salvarás a ti mismo y también a los que te
-      escuchan. (1 Timoteo 4:16).<br>
+    <a href="#">¡PRONTO!</a>
+    <h1>16 de Septiembre 2023</h1>
+    <img title="logolarge" src="public/assets/img/asamblea3.webp" class="imgLogo2" />
+    <h3> “Debes celebrar la Fiesta de las Cabañas...” (Deuteronomio 16:13).<br>
     </h3>
   </div>
   <!-- .stellarnav header-->
 
   <!--body original-->
   <section class="container">
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>UNA MAGNIFICA META DE SERVICIO<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-    <h3>Este es el momento de hacer los planes. Prediquemos la palabra de Dios plenamente
-    </h3>
+    <div class="content1">
+      <div class="overlay"></div>
+      <div class="wrapper">
 
-    <div class="content1">
-      <p>
-        Si deseamos progresar espiritualmente, debemos ponernos metas. ¿Nos hemos trazado alguna …? Un
-        objetivo magnífico es hacer el precursorado auxiliar durante uno o más meses. Marzo, abril, la
-        visita del Superintendente de circuito y los meses de campañas son excelentes oportunidades para
-        hacer el precursorado auxiliar. Para ello hace falta planificación, y ahora es un momento ideal
-        para planteárnoslo.
-      </p><br>
-      <h4>Razones para hacer el precursorado auxiliar.
-      </h4>
-      <p>
-        Esta faceta del servicio nos permite dedicar más tiempo al ministerio y así servir “más plenamente”
-        a nuestro Padre celestial <a href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/52/4#v=52:4:1-52:4:18"
-          target="_blank">(1 Tesalonicenses 4:1-18) </a>. Algo que nos mueve a hablar de Jehová es reflexionar sobre
-        todo lo que él ha hecho por nosotros <a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/19/34#v=19:34:1-19:34:2" target="_blank">(Sal. 34:1, 2)</a>.
-        Además, podemos estar seguros de que los
-        sacrificios que hacemos para participar a mayor grado en el ministerio no le pasan desapercibidos,
-        sino que le producen una gran satisfacción <a href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/58/6#v=58:6:10"
-          target="_blank">(Heb. 6:10)</a>. ¡Y qué contentos nos sentimos nosotros al
-        saber que nuestra ardua labor complace a Jehová! <a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/13/29#v=13:29:9" target="_blank">(1 Cró. 29:9)</a>.
-      </p>
-    </div>
-    <div class="content1">
-      <h4>Superemos las barreras. </h4>
-      <p>
-        Hay quienes no terminan de decidirse a solicitar el precursorado porque creen que no son buenos
-        predicadores. Si nos sentimos así, recordemos que Jehová puede ayudarnos. Así lo hizo en el caso
-        de Jeremías, y también en el de Moisés, a quien utilizó para cumplir su voluntad pese a ser un
-        hombre “lento de boca y lento de lengua” <a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/24/1#v=24:1:6-24:1:10" target="_blank">(Jer. 1:6-10;</a> <a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/4#v=2:4:10-2:4:12" target="_blank"> Éxo. 4:10-12)</a>. Por
-        lo tanto, si nos parece
-        que no damos la talla, pidámosle a Jehová que nos conceda el valor necesario.
-      </p>
-    </div>
-    <div class="containerc">
-      <h4>Cómo lograrlo</h4>
-      <p><img title="logolarge" src="public/assets/img/oracion1.png" class="img3" />
-      </p>
-    </div>
-    <div class="content1">
-      Cuando oremos a Jehová, debemos contarle cuántos deseos tenemos de ampliar nuestro servicio y
-      pedirle que bendiga los esfuerzos que estamos haciendo <a
-        href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/45/12#v=45:12:11-45:12:12" target="_blank">(Rom. 12:11,
-        12)</a>. Él nos guiará para que
-      tomemos buenas decisiones al elaborar un nuevo horario <a
-        href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/59/1#v=59:1:5" target="_blank">(Sant. 1:5)</a>. Y si nos faltan
-      las ganas,
-      pidámosle que nos ayude a disfrutar de la predicación <a
-        href="https://wol.jw.org/es/wol/l/r4/lp-s?q=Luc.+10%3A1%2C+17" target="_blank">(Luc. 10:1, 17)</a>.
-    </div>
-    <div class="content1">
-      <p>
-        Con empeño y buena planificación, muchos conseguiremos alcanzar la magnífica meta de ser precursores
-        auxiliares al menos un mes del nuevo año de servicio.
-      </p><br>
+        <h1 class="title1"><span>¡PRONTO!</span> 28 - 30 de julio de 2023</h1>
+        <div class="countdown-container">
+          <div>
+            <p id="days" class="big-text">0</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours" class="big-text">0</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="min" class="big-text">0</p>
+            <span>Min</span>
+          </div>
+          <div>
+            <p id="sec" class="big-text">0</p>
+            <span>Sec</span>
+          </div>
+        </div>
 
-      <P2>***Vea el articulo completo <a
-          href="https://www.jw.org/finder?wtlocale=S&docid=202007286&srctype=wol&srcid=share" target="_blank">Una
-          magnífica meta para el nuevo año de servicio</a> .***</P2><br><br>
+        <h1 class="title1">Asamblea regional</h1>
+        <h1 class="sub-title1">
+          Lugar: Silver Spurs Arena en Kissimmee<br>
+          Dirección: 1875 Silver Spur Ln. Kissimmee FL 34744-6105
+        </h1>
 
-      <div class="containerb">
-        <a href="horario.html"><i><img title="recurso" class="img6" src="public/assets/img/print.png">
-          </i></a>
-        <p-5>
-          Prepare un horario, vea como imprimir una copia <a href="horario.html" target="_blank">AQUI</a>
-        </p-5>
+
+
+        <h1 class="sub-title1">
+          Vea los recordatorios para la asamblea regional, presione
+          <a href="https://www.jw.org/es/biblioteca/videos/#es/mediaitems/SeriesWhiteboard/pub-jwbkm_201504_1_VIDEO"
+            target="_blank">
+            aqui </a><br><br>
+        </h1>
+
+        <div class="buttons-area">
+          <button type="submit" id="submit" class="formulario__submit"
+            onclick="window.location.href = 'https://www.jw.org/es/biblioteca/videos/#es/mediaitems/SeriesWhiteboard/pub-jwbkm_201504_1_VIDEO';">
+            Recordatorios
+          </button>
+
+          <h1 class="sub-title1">
+            La campaña para distribuir las invitaciones para la conmemoración
+            comienza el 7 de julio y concluye el domingo 30 de julio de 2023.<br><br>
+            ¡Hagamos planes con la familia¡ Sirvamos juntos como precursores auxiliares. Con solo
+            15 o 30 horas podemos completar el requisito de horas.
+          </h1>
+          <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
+          <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+        </div>
+      </div>
+      <div class="formulario__parrafo">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
       </div>
 
-      <div class="buttons-area">
-
-        <button type="submit" id="submit" class="formulario__submit"
-          onclick="window.location.href = 'precursorado.html';">¡Quiero aplicar ahora!
-        </button>
+      <div class="button">
+        <a href="#top"><i class="fas fa-arrow-up"></i></a>
       </div>
-      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
-      <img title="logolarge" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
-      <h4>Cuando ya le pesaban las manos a Moisés... Aarón y Hur se colocaron uno
-        a cada lado para
-        sostenerle las manos <a href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/2/17#v=2:17:12" target="_blank">Éxodo
-          17:12</a>.
-      </h4>
-      <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
-    </div>
-    <div class="button">
-      <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
 
@@ -318,12 +295,12 @@
   </script>
   <!-- required stellarnav-->
 
-  <!--contactos js-->
-  <script src="public/script.js"></script>
-  <script src="public/main.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
 
   <!-- Memanggil scripts-->
   <script type="text/javascript"></script>
+  <script src="public/regional.js"></script>
+
 
 </body>
 
