@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Metrowest GPS</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Metrowest GPS" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Metrowest GPS" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le proveera algunas herramientas para cuidar de la congregacion">
+  <meta property="og:title" content="Metrowest GPS">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/Metrowest/GPS/main/public/assets/icons/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/GPS/">
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" href="public/assets/icons/icon_48.png" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <link rel="mask-icon" href="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/horariotable.css">
+  <!-- required -->
+
+  <script type="module" href="/src/app-index.ts"></script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+  <!-- .stellarnav -->
+  <div class="stellarnav">
+    <ul>
+      <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp">
+          </i>Home</a>
+      </li>
+      <li><a><i><img title="proteccion" class="img6 js-arrow" src="public/assets/img/asistencia.webp">
+          </i>Congregación</a>
+        <ul>
+          <li>
+            <a href="desastre.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/tormenta1.webp"></i>
+              Plan Ante Un<br>Desastre Natural
+            </a>
+          </li>
+          <li>
+            <a href="salon.html">
+              <i><img title="android" class="img6" src="public/assets/img/salon.webp"></i>
+              Plan De Seguridad<br>Del Salón Del Reino
+            </a>
+          </li>
+          <li><a href="contactos.html"><i><img title="contactos" class="img6"
+                  src="public/assets/img/contactos2.webp"></i>Contactos De <br>Emergencia</a>
+          </li>
+          <li><a href="asistencia.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/asistencia.webp"></i>Asistencia</a>
+          </li>
+          <li><a href="visita.html"><i><img title="visita" class="img6"
+                  src="public/assets/img/circuito.webp"></i>Visita</a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="predicacion" class="img6 js-arrow" src="public/assets/img/precursor4.webp">
+          </i>Predicación</i></a>
+        <ul>
+          <li>
+            <a href="territorios.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/territorio1.webp"></i>
+              Territorios
+            </a>
+          </li>
+          <li>
+            <a href="interes.html">
+              <i><img title="android" class="img6" src="public/assets/img/precursor1.webp"></i>
+              Interesados
+            </a>
+          </li>
+          <li>
+            <a href="precursorado.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor2.webp"></i>
+              Precursorado
+            </a>
+          </li>
+          <li>
+            <a href="estudios.html">
+              <i><img title="android" class="img6" src="public/assets/img/biblia.webp"></i>
+              Estudios Bíblicos<br>Aignados Por El Comité
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="eventos" class="img6 js-arrow" src="public/assets/img/familia4.webp">
+          </i>Eventos</a>
+        <ul>
+          <li><a href="conmemoracion.html"><i><img title="casa1" class="img6"
+                  src="public/assets/img/bg.webp"></i>Conmemoración</a>
+          </li>
+          <li>
+            <a href="circuito1.html">
+              <i><img title="android" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 16 de Septiembre 2023
+            </a>
+          </li>
+          <li>
+            <a href="circuito2.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea1.webp"></i>
+              Asamblea de circuito<br> 14 de Enero 2024
+            </a>
+          </li>
+          <li>
+            <a href="regional.html">
+              <i><img title="apple" class="img6" src="public/assets/img/asamblea3.webp"></i>
+              Asamblea Regional<br> 28 - 30 de julio de 2023
+            </a>
+          </li>
+          <li>
+            <a href="campana.html">
+              <i><img title="apple" class="img6" src="public/assets/img/precursor4.webp"></i>
+              Campaña <br> Mundial
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp">
+          </i>Recursos</a>
+        <ul>
+          <li>
+            <a href="recursos.html">
+              <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+              Instalación En Windows
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#android">
+              <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+              Instalación En Androide
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#iphone">
+              <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+              Instalación En iPhone
+            </a>
+          </li>
+          <li>
+            <a href="recursos.html#territorios">
+              <i><img title="territorio2" class="img6" src="public/assets/img/territorio2.webp"></i>
+              Accede A Los Territorios
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Metrowest Service </a>
+    <h1>Trabajando Unidos Como Congregación</h1>
+    <img title="logolarge" src="public/assets/img/precursor.webp" class="imgLogo2" />
+    <h3> ”Por lo tanto, sigan buscando primero el Reino y la justicia de Dios, y
+      entonces recibirán también todas esas cosas". (Mateo 6:33).<br>
+    </h3>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--body original-->
+  <section class="container">
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <h2 class="section-header" id="section-header">
+        <i><img class="img4" alt="" src="public/assets/img/header1.webp"></i>APLIQUE PARA EL PRECURSORADO AUXILIAR<i>
+          <img class="img4" alt="" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+      <div class="content1">
+        <p>
+          Debido a mi amor a Jehová y mi deseo de ayudar al prójimo a
+          aprender acerca de él y sus amorosos propósitos, quisiera
+          aumentar mi participación en el servicio del campo siendo precursor
+          auxiliar durante el período indicado abajo:
+        </p>
+      </div>
+      <div class="content2">
+        <div class="inputs">
+          <input type="text" name="Mes" id="Mes" required>
+          <label>El Mes (los meses) de:</label>
+        </div>
+      </div>
+      <div class="content1">
+        <p>
+          ¿Desea usted servir como Prec.
+          Aux.
+          de “continuo”,
+          o sea, indefinidamente y así cumplir con el requisito de 30 horas (15 horas
+          durante marzo, abril, durante la visita del superintendente de circuito y en
+          tiempo de campañas)?<br>
+        </p>
+        <p>
+          Favor seleccionar "Si, de continuo" o "No"
+        </p>
+        <select input id="Decontinuo" name="De continuo" class="form-check-input" type="radius"
+          onchange="this.className=this.options[this.selectedIndex].className">
+          <option class="flechas" selected="true">--Seleccione--</option>
+          <option class="flechasRoja" value="No">------No------</option>
+          <option class="flechasVerde" value="Si, de continuo">Si, de continuo</option>
+        </select>
+      </div>
+      <div class="content1">
+        <p>Como recordatorio, una vez aprobado para ser Prec. Aux. de “continuo”, si
+          durante un
+          mes en particular
+          no puede cumplir con el requisito de horas se le dará de baja y tendrá que aplicar
+          otra vez.
+        </p>
+      </div>
+
+      <div class="content1">
+        <p>
+          Gozo de una buena reputación moral y tengo buenos
+          hábitos. He
+          hecho planes para satisfacer el requisito de horas. (Vea
+          Nuestro
+          Ministerio del Reino de junio de 2013, página
+          2).
+        </p>
+      </div>
+      <div class="content2">
+        <div class="inputs">
+          <input type="date" name="Fecha" id="Fecha" required>
+          <label>Fecha</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" name="Nombre" id="Nombre" required>
+          <label>Nombre</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" name="Apellido" id="Apellido" required>
+          <label>Apellido</label>
+        </div>
+      </div>
+
+      <div class="containerb">
+        <a href="precursorado2.html"><i><img title="precursorado2" class="img4"
+              src="public/assets/img/precursor5.png"></i></a>
+        <h3>Vea el artículo titulado <a href="precursorado2.html" target="_blank">"Una magnífica meta para el nuevo año
+            de servicio"</a>
+        </h3>
+      </div>
+
+      <div class="containerb">
+        <a href="horario.html"><i><img title="recurso" class="img6" src="public/assets/img/print.png">
+          </i></a>
+        <p-5>
+          Prepare un horario, vea como imprimir una copia <a href="horario.html" target="_blank">AQUI</a>
+        </p-5>
+      </div>
+      <p>
+        NOTA: Después de llenar la forma presione el botón “Confirme en WhatsApp” y luego
+        envié su aplicación utilizando WhatsApp. El mensaje será dirigido al coordinador del
+        cuerpo de ancianos. El proceso debe concluir enviando el mensaje por WhatsApp,
+        de lo contrario no habrá completado su aplicación.
+      </p>
+
+      <div class="content1" id="respuesta"></div>
+      <div class="content1">
+        <button type="submit" id="submit" class="formulario__submit">Confirme en WhatsApp</button>
+      </div><br>
+      <div class="content1">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+      </div>
+      <div class="content1">
+        <h2 class="titulo">Cuerpo de Ancianos, Metrowest<br> <span class="typed"></span></h2>
+      </div>
+      <div class="content1">
+        <h3>Para el Comité de Servicio de la Congregación:</h3>
+        <p>
+          1. ¿Es el solicitante un buen ejemplo del vivir cristiano?<br>
+          2. Quienes hayan sido censurados o readmitidos durante el
+          pasado año o todavía estén bajo restricciones no satisfacen los
+          requisitos.<br />
+          3. ¿Han consultado con su superintendente de grupo?
+        </p>
+      </div>
+    </form>
+    <div class="button">
+      <a href="#top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </section>
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwA6MRAFklwdoPIbyW7CnebniyOtqLLkVbEidbDVgVj9IyL4M-ug2Oa8JUtzJT9glLQow/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => alert("Confirme su solicitud en WhatsApp"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script>
+    $("a").click(function () {
+      $("nav").removeClass("w--open");
+    });
+    $("a").click(function () {
+      $("div").removeClass("w--open");
+    });
+  </script>
+
+
+
+  <script src="public/prec.rojo.js"></script>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+</body>
+
+</html>
