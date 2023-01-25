@@ -9,7 +9,8 @@
 
 .big-text {
     font-size: 4rem;
-}
+    text-align: center;
+  }
 
 .title1 {
     margin: 10px;
